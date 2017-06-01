@@ -2,11 +2,236 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <!-- Header -->
+    <header class="main-header  main-header__main-page">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__item  main-nav__item--header">
+            <div class="main-nav__wrapper-header">
+              <a class="logo logo--header">
+                <img src="img/logo.svg" width="" height="" alt="Pink">
+              </a>
+              <button class="main-nav__btn">Меню</button>
+            </div>
+          </div>
+          <ul class="main-nav__list">
+            <li>
+              <a class="main-nav__item  main-nav__item--active">Главная</a>
+            </li>
+            <li>
+              <a class="main-nav__item" href="photo.html">Фотографии</a>
+            </li>
+            <li>
+              <a class="main-nav__item" href="form.html">Конкурс</a>
+            </li>
+            <li>
+              <a class="main-nav__item" href="https://htmlacademy.ru">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="visualy-hidden">Pink - мобильное приложение для обработки фотографий</h1>  <!-- скрыт! -->
+    </header>
 
+  <!-- Main -->
+    <main>
+
+    <!-- Download-block -->
+      <section class="download">
+        <div class="download__wrapper">
+          <h2>Взгляните на жизнь иначе!</h2>
+          <a class="btn btn--download" href="#">Скачать приложение</a>
+          <ul class="download__apps">
+            <li>
+              <a class="download-links__item  download-links__item--apl" href="#"></a>
+            </li>
+            <li>
+              <a class="download-links__item  download-links__item--and" href="#"></a>
+            </li>
+            <li>
+              <a class="download-links__item  download-links__item--win" href="#"></a>
+            </li>
+          </ul>
+          <p class="download__discr">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+
+    <!-- Advantages -->
+      <section class="advantages">
+        <h2 class="visualy-hidden">Преимущества</h2>
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title">Устали от серости мегаполиса? <br>
+            Нам есть, что вам предложить!</h2>
+          <div class="advantages__list-wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item  advantages__item--mood">
+                <h3 class="advantages__item-title">Поднимает настроение</h3>
+                <p class="advantages__item-descr">Приложение позволит вам победить осеннюю</p>
+              </li>
+              <li class="advantages__item  advantages__item--world">
+                <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+                <p class="advantages__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item  advantages__item--friends">
+                <h3 class="advantages__item-title">Заводит новых друзей</h3>
+                <p class="advantages__item-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    <!-- Revievs -->
+      <section class="revievs">
+        <h2 class="visualy-hidden">Отзывы</h2>
+        <div class="revievs__slider-wrapper  slider">
+          <div class="revievs__list-wrapper  slider__wrapper">
+            <div class="revievs__list slider__inner">
+              <blockquote class="revievs__slide">
+                <cite class="revievs__autor-name">Николай Петров</cite>
+                <p class="revievs__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+              <blockquote class="revievs__slide">
+                <cite class="revievs__autor-name">Николай Петров</cite>
+                <p class="revievs__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+              <blockquote class="revievs__slide">
+                <cite class="revievs__autor-name">Николай Петров</cite>
+                <p class="revievs__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="revievs__pagination  slider__pagination">
+            <span class="slider__pagination-item  slider__pagination-item--active"></span>
+            <span class="slider__pagination-item"></span>
+            <span class="slider__pagination-item"></span>
+          </div>
+        </div>
+      </section>
+
+    <!-- Price -->
+      <section class="price">
+        <h2 class="visualy-hidden">Прайс</h2>
+        <div class="price__slider-wrapper  slider">
+          <div class="price__list-wrapper  slider__wrapper">
+            <div class="revievs__list slider__inner">
+              <table class="price__table">
+                <tr class="price__row">
+                  <th class="row__title">
+                    <b class="row__title-name">База</b>
+                    <p class="row__title-price">1,99 USD</p>
+                  </th>
+                  <th class="row__title">
+                    <b class="row__title-name">Стандарт</b>
+                    <p class="row__title-price">3,99 USD</p>
+                  </th>
+                  <th class="row__title">
+                    <b class="row__title-name">Анлим</b>
+                    <p class="row__title-price">9,99 USD</p>
+                  </th>
+                </tr>
+                <tr class="price__row">
+                  <td>
+                    <span class="cell__title">Розовый фильтр</span>
+                  </td>
+                  <td class="price__cell">
+                    <span class="cell__icon  cell__icon--yes">Да</span>
+                  </td>
+                  <td class="price__cell">
+                    <span class="cell__icon  cell__icon--yes">Да</span>
+                  </td>
+                  <td class="price__cell">
+                    <span class="cell__icon  cell__icon--yes">Да</span>
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price-cell">
+                    <span class="cell__title">Смайлики</span>
+                  </td>
+                  <td class="price__cell">
+                    <span class="cell__icon  cell__icon--no">Нет</span>
+                  </td>
+                  <td class="price__cell">
+                    <span class="cell__icon cell__icon--yes">Да</span>
+                  </td>
+                  <td class="price__cell">
+                    <span class="cell__icon  cell__icon--yes">Да</span>
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    <span class="cell__title">Комментарии</span>
+                  </td>
+                  <td class="price__cell">
+                    <span class="cell__icon  cell__icon--no">Нет</span>
+                  </td>
+                  <td class="price__cell">
+                    <span class="cell__icon  cell__icon--no">Нет</span>
+                  </td>
+                  <td class="price__cell">
+                    <span class="cell__icon  cell__icon--yes">Да</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="price__pagination  slider__pagination">
+            <span class="slider__price-item"></span>
+            <span class="slider__pagination-item  slider__price-item--active"></span>
+            <span class="slider__pagination-item"></span>
+          </div>
+        </div>
+      </section>
+
+    <!-- Contacts -->
+      <section class="contacts">
+        <h2 class="visualy-hidden">Контакты</h2>
+        <b>Остались вопросы? <br> Свяжитесь с нами!</b>
+        <div class="contacts__item">
+          <b class="contacts__title">Звоните:</b>
+          <p class="contacts__text">+7 (812) 555-66-66</p>
+        </div>
+        <div class="contacts__item">
+          <b class="contacts__title">Пишите:</b>
+          <p class="contacts__text">mail@htmlacademy.ru</p>
+        </div>
+        <div class="contacts__item">
+          <b class="contacts__title">Приезжайте в гости:</b>
+          <p class="contacts__text">ул. Большаяc <br> Конюшенная, 19/8</p>
+        </div>
+      </section>
+    </main>
+
+  <!-- Map -->
+    <div class="map">Карта</div>
+
+  <!-- Footer -->
+    <footer>
+      <div class="page-footer__wrapper">
+        <p>
+          <a class="page-footer__logo">
+            <img src="img/logo.svg" width="" height="" alt="Pink">
+          </a>
+        </p>
+        <p class="page-footer__social">
+          <span class="social-links">
+            <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграм</a>
+          </span>
+        </p>
+        <p class="page-footer__copiright">
+          Разработано:
+          <a class="page-footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
