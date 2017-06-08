@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Pink - Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/180115-pink/3/">
+</head>
+
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <div class="container">
+          <a class="main-nav__logo">
+            <img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink">
+          </a>
+          <button class="main-nav__btn" class="button"><img src="img/icon-menu-burger.svg"></button>
+          <ul class="main-nav__list">
+            <li>
+              <a class="main-nav__a"><img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink">
+              </a>
+              <button class="main-nav__btn" class="button"><img src="img/icon-menu-cross.svg"></button>
+            </li>
+            <li><a class="main-nav__a  main-nav__a--active"  href="index.html">Главная</a></li>
+            <li><a class="main-nav__a"  href="photo.html">Фотографии</a></li>
+            <li><a class="main-nav__a">Конкурс</a></li>
+            <li><a class="main-nav__a" href="https://htmlacademy.ru">Html academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1  class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </header>
+
+    <main>
+      <form class="form"  action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="visually-hidden">Форма</h2>
+        <p class="gallery__slogan container">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+        <div class="full-name container">
+          <label class="form__label form__label--red" for="surname" >Фамилия: </label>
+          <input class="form_input" id="surname" type="text" name="surname" value="Укажите фамилию *">
+          <label class="form__label form__label--red" for="name">Имя: </label>
+          <input class="form_input" id="name" type="text" name="name" value="Введите ваше имя *">
+          <label class="form__label form__label--red" for="patronymic">Отчество: </label>
+          <input class="form_input" id="patronymic" type="text" name="patronymic" value="Ну и отчество тоже">
+        </div>
+        
+        <fieldset class="attainment attainment--grey">
+           <legend class="form__legend container">Ваши безбашенные <br> достижения в путешествии
+           </legend>
+           <label class="form__label">
+             <input class="input__checkbox  input__checkbox--active" type="checkbox" name="shark" checked>
+            Сделал селфи с акулой
+          </label>
+           <label class="form__label">
+             <input class="input__checkbox  input__checkbox--active" type="checkbox" name="beach" checked>
+            Обгорел на пляже
+           </label>
+           <label class="form__label">
+             <input class="input__checkbox" type="checkbox" name="chak">
+            Видел Чака Норриса
+           </label>
+           <label class="form__label">
+             <input class="input__checkbox" type="checkbox" name="souvenir">
+            Накупил сувениров
+           </label>
+           <label class="form__label">
+             <input class="input__checkbox  input__checkbox--active" type="checkbox" name="tower" checked>
+            Удержал башню
+           </label>
+           <label class="form__label">
+             <input class="input__checkbox" type="checkbox" name="hotel">
+            Разгромил отель
+           </label>
+         </fieldset>
+        
+        <div class="contacts">
+          <label class="form__label form__label--red" for="tel">Номер телефона</label>
+          <input class="form_input" id="tel" type="tel" name="tel" value="Номер, пожалуйста">
+          <label class="form__label form__label--red" for="email">Адрес почты</label>
+          <input class="form_input" id="email" type="email" name="email" value="Введите почту *">
+        </div>
+        
+        <fieldset class="which-app which-app--grey">
+          <legend class="form__legend">С каким приложением путешествовали?</legend>
+          <label class="form__label" for="apl">
+            <input class="which-app__input  which-app__input--active" id="apl" type="radio" name="app" value="apl" checked>
+            Pink для iOS
+          </label>
+          <label class="form__label" for="and">
+            <input class="which-app__input" id="and" type="radio" name="app" value="and">
+            Pink на Android
+          </label>
+          <label class="form__label" for="win">
+            <input class="which-app__input" id="win" type="radio" name="app" value="win">
+            Windows Phone
+          </label>
+        </fieldset>
+
+        <fieldset class="emotions">
+          <legend class="form__legend container">Опишите свои эмоции</legend>
+          <textarea class="form_input  form_input--textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+        <input class="form-btn" type="submit" value="Отправить форму">
+        <p class="form__required"><span class="form__required--red">*</span> — Обязательные поля</p>
+      </form>
+    </main>
+
+    <footer class="footer">
+        <section  class="footer__logo">
+          <a><img src="img/logo-pink-blue-mobile.svg" width="140" height="40" alt="Pink"></a>
+        </section>
+        <section class="footer__social">         
+          <a class="social-link social-link--tt" href="https://vk.com/htmlacademy">Твиттер</a>
+          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          <a class="social-link social-link--yo" href="https://www.instagram.com/htmlacademy">Ютюб</a>
+        </section>
+        <section class="footer__copiright">
+          <b>Разработано</b>
+          <a class="footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+        </section>
+    </footer>
+  </body>
+</html>
