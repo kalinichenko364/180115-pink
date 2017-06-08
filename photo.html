@@ -2,153 +2,146 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink - Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="main-header  main-header__main-page">
+
+    <header class="header">
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <div class="main-nav__item  main-nav__item--header">
-            <div class="main-nav__wrapper-header">
-              <a class="logo logo--header" href="index.html">
-                <img src="img/logo.svg" width="80" height="20" alt="Pink">
-              </a>
-              <button class="main-nav__btn">Меню</button>
-            </div>
-          </div>
+        <div class="container">
+          <a class="main-nav__logo">
+            <img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink">
+          </a>
+          <button class="main-nav__btn" class="button"><img src="img/icon-menu-burger.svg"></button>
           <ul class="main-nav__list">
             <li>
-              <a class="main-nav__item" href="index.html">Главная</a>
+              <a class="main-nav__a"><img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink">
+              </a>
+              <button class="main-nav__btn" class="button"><img src="img/icon-menu-cross.svg"></button>
             </li>
-            <li>
-              <a class="main-nav__item  main-nav__item--active" href="">Фотографии</a>
-            </li>
-            <li>
-              <a class="main-nav__item" href="form.html">Конкурс</a>
-            </li>
-            <li>
-              <a class="main-nav__item" href="https://htmlacademy.ru">HTML academy</a>
-            </li>
+            <li><a class="main-nav__a  main-nav__a--active"  href="index.html">Главная</a></li>
+            <li><a class="main-nav__a">Фотографии</a></li>
+            <li><a class="main-nav__a" href="form.html">Конкурс</a></li>
+            <li><a class="main-nav__a" href="https://htmlacademy.ru">Html academy</a></li>
           </ul>
         </div>
       </nav>
-      <h1>Фотографии<br> пользователей</h1>
+      <h1  class="header__title">Фотографии<br> пользователей</h1>
     </header>
+
     <main>
       <section class="gallery">
-      <h2 class="visualy-hidden">Галлерея</h2>
-        <p class="gallery__slogan">
-          Взгляните на фотографии, которые выкладывают пользователи!  Видите, как не хватает ваших?
+      <h2 class="visually-hidden">Галлерея</h2>
+        <p class="gallery__slogan container">
+          Взгляните на фотографии, которые выкладывают пользователи! <br> Видите, как не хватает ваших?
         </p>
         <div class="gallery__item gallery__item--panorama">
-          <img class="gallery__item-pict--panorama" src="#" width="320" height="140" alt="Panorama">
-          <div class="gallery__item-discr">
+          <img class="gallery__item-pict--panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="140" alt="Panorama">
+          <div class="gallery__item--discr container">
             <p class="item-discr__author-name">Анна</p>
             <span class="item-discr__time">(5 минут назад)</span>
             <p class="item-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <button class="gallery__like" type="button"></button>
+            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg"></button>
             <span class="gallery__like-number">Нравится: 215</span>
           </div>
         </div>
-        <div class="gallery__item">
-          <img class="gallery__item-pict" src="#" width="280" height="180" alt="Pictures">
+        <div class="gallery__item container">
+          <img class="gallery__item-pict" src="../img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Pictures">
           <div class="gallery__item--discr">
             <p class="item-discr__author-name">Левон</p>
             <span class="item-discr__time">(5 часов назад)</span>
             <p class="item-text">Вчера он на луну летал, сегодня в руки к нам попал</p>
-            <button class="gallery__like" type="button"></button>
+            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg"></button>
             <span class="gallery__like-number">Нравится: 356</span>
           </div>
         </div>
-        <div class="gallery__item">
-          <img class="gallery__item-pict" src="#" width="280" height="180" alt="Pictures">
+        <div class="gallery__item container">
+          <img class="gallery__item-pict" src="../img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Pictures">
           <div class="gallery__item--discr">
             <p class="item-discr__author-name">Антон</p>
             <span class="item-discr__time">(12 часов назад)</span>
             <p class="item-text">Соседи будут рады!</p>
-            <button class="gallery__like" type="button"></button>
+            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg"></button>
             <span class="gallery__like-number">Нравится: 666</span>
           </div>
         </div>
-        <div class="gallery__item">
-          <img class="gallery__item-pict" src="#" width="280" height="180" alt="Pictures">
+        <div class="gallery__item container">
+          <img class="gallery__item-pict" src="../img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Pictures">
           <div class="gallery__item--discr">
             <p class="item-discr__author-name">Борис</p>
             <span class="item-discr__time">(20 часов назад)</span>
             <p class="item-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="gallery__like" type="button"></button>
+            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg"></button>
             <span class="gallery__like-number">Нравится: 215</span>
           </div>
         </div>
-        <div class="gallery__item">
-          <img class="gallery__item-pict" src="#" width="280" height="180" alt="Pictures">
+        <div class="gallery__item container">
+          <img class="gallery__item-pict" src="../img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Pictures">
           <div class="gallery__item--discr">
             <p class="item-discr__author-name">Сергей</p>
             <span class="item-discr__time">(25 часов назад)</span>
             <p class="item-text">Самая кубанская в мире!</p>
-            <button class="gallery__like" type="button"></button>
+            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg"></button>
             <span class="gallery__like-number">Нравится: 4</span>
           </div>
         </div>
-        <div class="gallery__item">
-          <img class="gallery__item-pict" src="#" width="280" height="180" alt="Pictures">
+        <div class="gallery__item container">
+          <img class="gallery__item-pict" src="../img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Pictures">
           <div class="gallery__item--discr">
             <p class="item-discr__author-name">Максим</p>
             <span class="item-discr__time">(40 часов назад)</span>
             <p class="item-text">Где снег-то?</p>
-            <button class="gallery__like" type="button"></button>
+            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg"></button>
             <span class="gallery__like-number">Нравится: 150</span>
           </div>
         </div>
-        <div class="gallery__item">
-          <img class="gallery__item-pict" src="#" width="280" height="180" alt="Pictures">
+        <div class="gallery__item container">
+          <img class="gallery__item-pict" src="../img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Pictures">
           <div class="gallery__item--discr">
             <p class="item-discr__author-name">Надежда</p>
             <span class="item-discr__time">(45 часов назад)</span>
             <p class="item-text">Всем GM и взаимные лайки!</p>
-            <button class="gallery__like" type="button"></button>
+            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg"></button>
             <span class="gallery__like-number">Нравится: 2560</span>
           </div>
         </div>
       </section>
+
       <div class="filter">
-        <p class="filter__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-        </p>
-        <img class="filter-pict" src="#" width="280" height="375" alt="Filter Pictures">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <div class="range-filter">
-          <label class="range-icon  range-icon__size  range-icon__size range-icon__size--active" for="size"></label>
-          <label class="range-icon  range-icon__color" for="color"></label>
-          <label class="range-icon  range-icon__bright" for="bright"></label>
-          <input class="range-control range-control--active" id="size" name="size">
-          <input class="range-control" id="color" name="color">
-          <input class="range-control" id="bright" name="bright">
+      <h2 class="filter__slogan container">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
+        <div class="filter-wrapper">
+          <div class="container">
+            <img class="filter-pict" src="../img/photo-7-mobile@1x.jpg" width="280" height="375" alt="Filter Pictures">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <div class="range-filter">
+                <a class="range-filter__a  range-filter__a--cro" href="#">Crop</a>
+                <a class="range-filter__a  range-filter__a--fil" href="#">Fill</a>
+                <a class="range-filter__a  range-filter__a--con" href="#">Contrast</a>
+              </div>
+              <div class="line-grey"></div>
+              <input class="btn filter-btn--upload" type="submit" value="Запостить">
+              <input class="btn filter-btn--reset" type="reset" value="Отмена">
+            </form>
           </div>
-          <input class="btn filter-btn--upload" type="submit" value="Запостить">
-          <input class="btn filter-btn--reset" type="reset" value="Отмена">
-        </form>
+        </div>
       </div>
     </main>
-    <footer>
-      <div class="page-footer__wrapper">
-        <p>
-          <a class="page-footer__logo">
-            <img src="img/logo.svg" width="140" height="40" alt="Pink">
-          </a>
-        </p>
-        <p class="page-footer__social">
-          <span class="social-links">
-            <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграм</a>
-          </span>
-        </p>
-        <p class="page-footer__copiright">
-          Разработано:
-          <a class="page-footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
-        </p>
-      </div>
+
+    <footer class="footer">
+        <section  class="footer__logo">
+          <a><img src="img/logo-pink-blue-mobile.svg" width="140" height="40" alt="Pink"></a>
+        </section>
+        <section class="footer__social">         
+          <a class="social-link social-link--tt" href="https://vk.com/htmlacademy">Твиттер</a>
+          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          <a class="social-link social-link--yo" href="https://www.instagram.com/htmlacademy">Ютюб</a>
+        </section>
+        <section class="footer__copiright">
+          <b>Разработано</b>
+          <a class="footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+        </section>
     </footer>
   </body>
 </html>

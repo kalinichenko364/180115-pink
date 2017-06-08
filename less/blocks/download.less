@@ -1,0 +1,46 @@
+.download {
+  position: absolute;
+  bottom: 10px;
+  width: 320px;
+  min-height: 220px;
+  background-color: #1d2631;
+  
+  &__discr {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+  
+.download-links {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 280px;
+  height: 60px;
+
+  margin-top: 30px;
+  list-style-type: none;
+    
+  &__a {
+  display: inline-block;
+
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+      
+   &--apl {
+     background: url("../img/logo-apple.svg") no-repeat 50% 50%;
+   }
+      
+    &--and {
+      background: url("../img/logo-android.svg") no-repeat 50% 50%;
+    }
+      
+   &--win {
+      background: url("../img/logo-microsoft.svg") no-repeat 50% 50%;
+    }  
+  }
+}
