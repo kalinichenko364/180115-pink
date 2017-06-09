@@ -1,14 +1,12 @@
 .main-nav {
   position: relative;
-  height: 50px;
-  padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.3);
-  
+  bottom: 260px;
+  left: -20px;
+
   &__list {
     display: block;
     position: absolute;
-    left: 321px;
-    top: 0;
+    
     width: 100%;
     list-style-type: none;
     text-align: center;
@@ -16,12 +14,12 @@
     padding: 0;
     margin: 0;
   }
-  
+
   &__list li:first-child {
     text-align: left;
     padding-left: 20px;
   }
-  
+
   &__a {
     font-size: 18px;
     color: #fff;
@@ -31,10 +29,14 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  
+
   &__btn {
     float: right;
     margin-right: 20px;
+
+    &--menu {
+      display: none;
+    }
   }
 }
 
