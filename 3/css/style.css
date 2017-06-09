@@ -413,7 +413,7 @@ body {
   src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
 }
 .advantages {
-  margin-top: -30px;
+  margin-top: 240px;
 }
 .advantages__title {
   margin-bottom: 30px;
@@ -468,7 +468,6 @@ body {
 .contacts {
   text-align: center;
   min-height: 410px;
-  margin-bottom: 130px;
 }
 .contacts__title {
   font-size: 24px;
@@ -485,7 +484,7 @@ body {
 }
 .download {
   position: absolute;
-  bottom: 10px;
+  bottom: 13px;
   width: 320px;
   min-height: 220px;
   background-color: #1d2631;
@@ -579,7 +578,7 @@ body {
   vertical-align: top;
   text-align: center;
   min-height: 285px;
-  padding-top: 40px;
+  padding-top: -30px;
 }
 .footer--index {
   display: none;
@@ -593,13 +592,14 @@ body {
   display: inline-block;
   vertical-align: middle;
   width: 280px;
-  margin-top: 40px;
+  margin-top: -30px;
 }
 .footer__copiright {
   display: inline-block;
   vertical-align: middle;
   width: 280px;
-  margin-top: 40px;
+  margin-top: -30px;
+  margin-bottom: 40px;
 }
 .footer__copiright b {
   display: inline-block;
@@ -773,11 +773,14 @@ body {
 }
 .header {
   position: relative;
+  top: 243px;
   min-height: 240px;
+  margin-bottom: 250px;
   color: #fff;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
 }
 .header--index {
+  top: 260px;
   min-height: 730px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 40%, url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
 }
@@ -786,19 +789,16 @@ body {
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
-  padding-top: 20px;
+  padding-top: 100px;
 }
 .main-nav {
   position: relative;
-  height: 50px;
-  padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 260px;
+  left: -20px;
 }
 .main-nav__list {
   display: block;
   position: absolute;
-  left: 321px;
-  top: 0;
   width: 100%;
   list-style-type: none;
   text-align: center;
@@ -822,6 +822,9 @@ body {
 .main-nav__btn {
   float: right;
   margin-right: 20px;
+}
+.main-nav__btn--menu {
+  display: none;
 }
 .main-nav li {
   padding-top: 20px;

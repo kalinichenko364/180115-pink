@@ -12,24 +12,21 @@
     <header class="header">
       <nav class="main-nav">
         <div class="container">
-          <a class="main-nav__logo">
-            <img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink">
-          </a>
-          <button class="main-nav__btn" class="button"><img src="img/icon-menu-burger.svg"></button>
           <ul class="main-nav__list">
             <li>
               <a class="main-nav__a"><img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink">
               </a>
-              <button class="main-nav__btn" class="button"><img src="img/icon-menu-cross.svg"></button>
+              <button class="main-nav__btn main-nav__btn--clouse"><img src="img/icon-menu-cross.svg" alt="Закрыть"></button>
+              <button class="main-nav__btn main-nav__btn--menu"><img src="img/icon-menu-burger.svg" alt="Меню"></button>
             </li>
-            <li><a class="main-nav__a  main-nav__a--active"  href="index.html">Главная</a></li>
-            <li><a class="main-nav__a"  href="photo.html">Фотографии</a></li>
-            <li><a class="main-nav__a">Конкурс</a></li>
-            <li><a class="main-nav__a" href="https://htmlacademy.ru">Html academy</a></li>
+            <li><a class="main-nav__a"  href="index.html">Главная</a></li>
+            <li><a class="main-nav__a" href="photo.html">Фотографии</a></li>
+            <li><a class="main-nav__a  main-nav__a--active">Конкурс</a></li>
+            <li><a class="main-nav__a"href="https://htmlacademy.ru">Html academy</a></li>
           </ul>
         </div>
       </nav>
-      <h1  class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1  class="header__title">Конкурс на самое безбашенное <br> путешествие с Пинк</h1>
     </header>
 
     <main>
@@ -46,43 +43,41 @@
           <label class="form__label form__label--red" for="patronymic">Отчество: </label>
           <input class="form_input" id="patronymic" type="text" name="patronymic" value="Ну и отчество тоже">
         </div>
-        
         <fieldset class="attainment attainment--grey">
-           <legend class="form__legend container">Ваши безбашенные <br> достижения в путешествии
-           </legend>
-           <label class="form__label">
-             <input class="input__checkbox  input__checkbox--active" type="checkbox" name="shark" checked>
+          <legend class="form__legend container">Ваши безбашенные <br> достижения в путешествии</legend>
+          <label class="form__label">
+            <input class="input__checkbox  input__checkbox--active" type="checkbox" name="shark" checked>
             Сделал селфи с акулой
           </label>
-           <label class="form__label">
-             <input class="input__checkbox  input__checkbox--active" type="checkbox" name="beach" checked>
+          <label class="form__label">
+            <input class="input__checkbox  input__checkbox--active" type="checkbox" name="beach" checked>
             Обгорел на пляже
-           </label>
-           <label class="form__label">
-             <input class="input__checkbox" type="checkbox" name="chak">
+          </label>
+          <label class="form__label">
+            <input class="input__checkbox" type="checkbox" name="chak">
             Видел Чака Норриса
-           </label>
-           <label class="form__label">
-             <input class="input__checkbox" type="checkbox" name="souvenir">
+          </label>
+          <label class="form__label">
+            <input class="input__checkbox" type="checkbox" name="souvenir">
             Накупил сувениров
-           </label>
-           <label class="form__label">
-             <input class="input__checkbox  input__checkbox--active" type="checkbox" name="tower" checked>
+          </label>
+          <label class="form__label">
+            <input class="input__checkbox  input__checkbox--active" type="checkbox" name="tower" checked>
             Удержал башню
-           </label>
-           <label class="form__label">
-             <input class="input__checkbox" type="checkbox" name="hotel">
+          </label>
+          <label class="form__label">
+            <input class="input__checkbox" type="checkbox" name="hotel">
             Разгромил отель
-           </label>
-         </fieldset>
-        
+          </label>
+        </fieldset>
+
         <div class="contacts">
           <label class="form__label form__label--red" for="tel">Номер телефона</label>
           <input class="form_input" id="tel" type="tel" name="tel" value="Номер, пожалуйста">
           <label class="form__label form__label--red" for="email">Адрес почты</label>
           <input class="form_input" id="email" type="email" name="email" value="Введите почту *">
         </div>
-        
+
         <fieldset class="which-app which-app--grey">
           <legend class="form__legend">С каким приложением путешествовали?</legend>
           <label class="form__label" for="apl">
@@ -109,18 +104,21 @@
     </main>
 
     <footer class="footer">
-        <section  class="footer__logo">
-          <a><img src="img/logo-pink-blue-mobile.svg" width="140" height="40" alt="Pink"></a>
-        </section>
-        <section class="footer__social">         
-          <a class="social-link social-link--tt" href="https://vk.com/htmlacademy">Твиттер</a>
-          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
-          <a class="social-link social-link--yo" href="https://www.instagram.com/htmlacademy">Ютюб</a>
-        </section>
-        <section class="footer__copiright">
-          <b>Разработано</b>
-          <a class="footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
-        </section>
+      <section  class="footer__logo">
+      <h2 class="visually-hidden">Логотип</h2>
+        <a><img src="img/logo-pink-blue-mobile.svg" width="140" height="40" alt="Pink"></a>
+      </section>
+      <section class="footer__social">
+      <h2 class="visually-hidden">Соцеальные сети</h2>
+        <a class="social-link social-link--tt" href="https://vk.com/htmlacademy">Твиттер</a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+        <a class="social-link social-link--yo" href="https://www.instagram.com/htmlacademy">Ютюб</a>
+      </section>
+      <section class="footer__copiright">
+      <h2 class="visually-hidden">Копирайт</h2>
+        <b>Разработано</b>
+        <a class="footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+      </section>
     </footer>
   </body>
 </html>
