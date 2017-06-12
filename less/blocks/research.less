@@ -1,0 +1,68 @@
+.research {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .research {
+    display: block;
+    margin-bottom: 0;
+
+    &__item {
+      float: right;
+      width: 330px;
+
+      p {
+        margin-top: 10px;
+      }
+      a {
+        color: #d22856;
+      }
+    }
+
+    &__item-title {
+      margin-top: 40px;
+      margin-bottom: 0;
+      
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .research-wrapper {
+    min-height: 420px;
+    background: url("../img/timer.svg.png") no-repeat 5% 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .research {
+
+    &__item {
+      width: 510px;
+      margin-top: 75px;
+      margin-right: 190px;
+
+      p {
+        margin-top: 24px;
+        margin-bottom: 25px;
+      }
+    }
+
+    &__item-title {
+
+      span {
+        display: inline-block;
+      }
+    }
+  }
+
+  .research-wrapper {
+    min-height: 420px;
+    background: #f2f2f2 url("../img/timer.svg.png") no-repeat 17% 50%;
+  }
+}

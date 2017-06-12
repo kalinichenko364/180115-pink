@@ -73,3 +73,53 @@
     background:  url("../img/icon-youtube.svg") no-repeat 52% 48%;
   }
 }
+
+@media (min-width: 768px) {
+  .footer {
+    min-height: 130px;
+    margin-top: 60px;
+
+    &--index {
+      display: inline-block;
+      width: 660px;
+    }
+
+    &__logo {
+      width: 150px;
+      float: left;
+      margin-top: -5px;
+    }
+
+    &__social {
+      float: left;
+      width: 320px;
+      margin-top: -5px;
+    }
+
+    &__copiright {
+      float: right;
+      width: 180px;
+      margin-top: 5px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    width: 960px;
+    margin: 0 auto;
+    margin-left: 130px;
+    min-height: 200px;
+    margin-top: 100px;
+    
+    &__social {
+      width: 640px;
+    }
+    
+    &__copiright {
+      width: 180px;
+      margin-top: -50px;
+    }
+  }
+}

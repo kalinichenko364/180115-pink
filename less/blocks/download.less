@@ -1,9 +1,24 @@
 .download {
   position: absolute;
-  bottom: 13px;
+  bottom: 0;
   width: 320px;
-  min-height: 220px;
+  min-height: 250px;
+  text-align: center;
   background-color: #1d2631;
+
+  &__title {
+    position: absolute;
+    visibility: hidden;
+    
+    display: inline-block;
+    width: 190px;
+    padding-left: 20px;
+    
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 300;
+    
+  }
 
   &__discr {
     margin-bottom: 30px;
@@ -12,6 +27,10 @@
     line-height: 24px;
     font-weight: 300;
   }
+}
+
+.btn--download {
+  margin-top: 30px;
 }
 
 .download-links {
@@ -42,5 +61,30 @@
     &--win {
       background: url("../img/logo-microsoft.svg") no-repeat 50% 50%;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .download {
+    bottom: 340px;
+    background-color: transparent;
+
+    &__title {
+      position: relative;
+      visibility: visible;
+    }
+
+    &__discr {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .download {
+    display: block;
+    left: 120px;
+    bottom: 90px;
+    width: 310px;
   }
 }
