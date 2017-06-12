@@ -1,4 +1,5 @@
 .reviews {
+  position: relative;
   margin-bottom: 80px;
 
   &__list {
@@ -12,8 +13,67 @@
   }
 
   &__autor-name {
+    position: absolute;
+    left: 60px;
     font-style: normal;
     font-size: 18px;
     font-weight: 700;
+
+    &--discr {
+      display: none;
+    }
+  }
+
+  p {
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding: 0;
+    padding-bottom: 80px;
+    margin: 0;
+    margin-top: -60px;
+    margin-bottom: 65px;
+
+    &__autor-name {
+      display: block;
+      bottom: 3px;
+      left: 240px;
+      font-size: 20px;
+      font-weight: 700;
+
+      &--discr {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 156px;
+    margin-bottom: 40px;
+
+    &__autor-name {
+      bottom: -3px;
+      font-size: 24px;
+
+      &--discr {
+        font-size: 18px;
+        margin-top: 5px;
+      }
+    }
   }
 }

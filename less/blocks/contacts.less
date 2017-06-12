@@ -1,20 +1,64 @@
 .contacts {
   text-align: center;
   min-height: 410px;
+
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  &__item-title {
+    font-size: 18px;
+    line-height: 0;
+    font-weight: 700;
+  }
+
+  &__item p {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #d22856;
+  }
 }
 
-.contacts__title {
-  font-size: 24px;
-  font-weight: 300;
+@media (min-width: 768px) {
+  .contacts {
+    min-height: 330px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 45px;
+      margin-bottom: 50px;
+    }
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      width: 300px;
+    }
+
+    &__item p{
+      margin-top: 3px;
+      margin-bottom: 50px;
+      line-height: 27px;
+    }
+  }
 }
 
-.contacts__item-title {
-  font-size: 18px;
-  font-weight: 700;
-}
+@media (min-width: 1200px) {
+  .contacts {
+    min-height: 300px;
 
-.contacts__item p {
-  font-size: 24px;
-  font-weight: 300;
-  color: #d22856;
+    &__title {
+      font-size: 50px;
+      line-height: 55px;
+      margin-bottom: 55px;
+    }
+
+    &__item-title {
+      font-size: 18px;
+    }
+  }
 }

@@ -2,12 +2,13 @@
   position: relative;
   min-height: 470px;
   background-color: #f2f2f2;
+  margin-bottom: 40px;
 
   &__table {
     position: absolute;
     left: -440px;
     width: 1030px;
-    margin-top: 70px;
+    margin-top: 85px;
     text-transform: uppercase;
     background-color: #fff;
     border-collapse: collapse;
@@ -16,12 +17,12 @@
 
 .row__title,
 .price__table td {
-  padding: 15px 20px;
+  padding: 19px 20px;
   border: 2px solid #e5e5e5;
 }
 
 .row__title {
-  color: #fff;
+  color: #ffffff;
   background-color: #283645;
 
   &--hit {
@@ -51,4 +52,51 @@
 
 .cell__icon--no {
   background: url("../img/icon-no.svg") no-repeat 100% 50%;
+}
+
+@media (min-width: 768px) {
+  .price {
+    min-height: 380px;
+    margin-bottom: 45px;
+
+    &__table {
+      left: 0;
+      width: 620px;
+      margin-left: 20px;
+    }
+  }
+
+  .cell__icon {
+    font-size: 0;
+    background-position: 50% 50%;
+  }
+
+  .row__title {
+    padding: 19px 0;
+  }
+
+  .price__table td {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price {
+    min-height: 525px;
+    margin-bottom: 70px;
+
+    &__table {
+      left: 0;
+      width: 940px;
+      margin-left: 120px;
+    }
+  }
+
+  .row__title {
+    padding: 19px 0px;
+  }
+
+  .cell__title {
+    width: 235px;
+  }
 }

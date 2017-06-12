@@ -1,8 +1,9 @@
 .advantages {
-  margin-top: 240px;
+  margin-top: 310px;
+  margin-bottom: 55px;
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     text-align: center;
     font-size: 24px;
@@ -19,15 +20,100 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
   &__item {
-    padding: 5px 20px;
+    padding: 1px 20px;
   }
 
   &__item-title {
     font-size: 18px;
     font-weight: 700;
+    color: #000000;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    margin-top: 0px;
+    margin-bottom: 55px;
+
+    text-align: center;
+
+    &__title {
+      margin-bottom: 0px;
+      font-size: 40px;
+    }
+
+    &__title:nth-child(2) {
+      display: inline-block;
+      width: 340px;
+      line-height: 40px;
+    }
+
+    &__list {
+      float: right;
+      width: 350px;
+      padding-top: 55px;
+      text-align: left;
+    }
+
+    &__list-wrapper {
+      min-height: 485px;
+      margin-top: 50px;
+      background: #f2f2f2 url("../img/iphone-screen-mobile@1x.png") no-repeat 10% 120%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    margin-bottom: 0;
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__title:nth-child(2) {
+      display: inline-block;
+      width: 430px;
+      margin-top: 20px;
+      line-height: 54px;
+    }
+
+    &__list-wrapper {
+      min-height: 600px;
+      margin-top: 80px;
+      background: none;
+    }
+
+    &__list {
+      width: 1200px;
+      padding-top: 55px;
+      text-align: center;
+    }
+
+    &__item {
+      display: inline-block;
+      width: 310px;
+      padding-top: 270px;
+      background: #f2f2f2 url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 0%;
+
+      p {
+        display: inline-block;
+        width: 240px;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    &__item-title {
+      display: inline-block;
+      width: 230px;
+      margin-bottom: 8px;
+      font-size: 30px;
+      line-height: 30px;
+    }
   }
 }

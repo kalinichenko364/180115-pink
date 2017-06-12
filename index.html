@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -27,7 +29,7 @@
       </nav>
 
       <div class="download">
-      <h1 class="header__title visually-hidden">Взгляните на жизнь иначе!</h1>
+      <h1 class="download__title">Взгляните на жизнь иначе!</h1>
         <div class="container">
           <a class="btn btn--download" href="#">Скачать приложение</a>
           <div class="download-links">
@@ -67,13 +69,24 @@
         </div>
       </section>
 
+      <section class="research">
+      <h2 class="visually-hidden">Исследования</h2>
+        <div class="research-wrapper">
+          <div class="research__item">
+            <h2 class="research__item-title"><span>Эффект</span> на 24 часа!</h2>
+            <p>Британские ученые провели исследованияи доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+
       <section class="reviews container">
-        <h2 class="visually-hidden">Отзывы</h2>
+      <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__slider-wrapper  slider">
           <div class="reviews__list-wrapper  slider__wrapper">
             <div class="reviews__list slider__inner">
               <blockquote class="reviews__slide">
-                <cite class="reviews__autor-name">Николай Петров</cite>
+                <cite class="reviews__autor-name">Николай Петров<span class="reviews__autor-name--discr">25 лет, водитель трамвая</span></cite>
                 <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
             <!--  <blockquote class="reviews__slide">
@@ -170,9 +183,9 @@
         </div>
       </section>
 
-      <section class="contacts  container">
-        <h2 class="visually-hidden">Контакты</h2>
-        <h2 class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</h2>
+      <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <h2 class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</h2>
         <div class="contacts__item">
           <b class="contacts__item-title">Звоните:</b>
           <p>+7 (812) 555-66-66</p>
@@ -186,29 +199,27 @@
           <p>ул. Большаяc <br> Конюшенная, 19/8</p>
         </div>
       </section>
+
+      <div class="map">Карта</div>
+
     </main>
 
-    <div class="map">Карта</div>
-
-    <footer class="footer footer--index">
-      <div class="footer__wrapper">
-        <p>
-          <a class="footer__logo">
-            <img src="img/logo.svg" width="80" height="20" alt="Pink">
-          </a>
-        </p>
-        <p class="footer__social">
-          <span class="social-links">
-            <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграм</a>
-          </span>
-        </p>
-        <p class="footer__copiright">
-          Разработано:
-          <a class="footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
-        </p>
-      </div>
+    <footer class="footer">
+      <section  class="footer__logo">
+      <h2 class="visually-hidden">Логотип</h2>
+        <a><img src="img/logo-pink-blue-mobile.svg" width="140" height="40" alt="Pink"></a>
+      </section>
+      <section class="footer__social">
+      <h2 class="visually-hidden">Соцеальные сети</h2>
+        <a class="social-link social-link--tt" href="https://vk.com/htmlacademy">Твиттер</a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+        <a class="social-link social-link--yo" href="https://www.instagram.com/htmlacademy">Ютюб</a>
+      </section>
+      <section class="footer__copiright">
+      <h2 class="visually-hidden">Копирайт</h2>
+        <b>Разработано</b>
+        <a class="footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+      </section>
     </footer>
   </body>
 </html>
