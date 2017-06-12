@@ -9,15 +9,14 @@
   &__title {
     position: absolute;
     visibility: hidden;
-    
+
     display: inline-block;
     width: 190px;
     padding-left: 20px;
-    
+
     font-size: 40px;
     line-height: 44px;
     font-weight: 300;
-    
   }
 
   &__discr {
@@ -66,17 +65,32 @@
 
 @media (min-width: 768px) {
   .download {
-    bottom: 340px;
+    width: 400px;
+    bottom: 70px;
+    text-align: left;
     background-color: transparent;
 
     &__title {
       position: relative;
       visibility: visible;
+      
+      margin-left: 40px;
+      text-align: center;
     }
 
     &__discr {
+      width: 360px;
       font-size: 18px;
     }
+  }
+  
+  .download-links {
+    margin-left: 20px;
+  }
+  
+  .btn--download {
+    margin-left: 20px;
+    margin-top: 30px;
   }
 }
 

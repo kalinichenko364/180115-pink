@@ -1,5 +1,5 @@
 .form {
-  
+
   &__slogan {
     margin-bottom: 40px;
     text-align: center;
@@ -7,20 +7,20 @@
     line-height: 30px;
     font-weight: 400;
   }
-  
+
   &__slogan--nomobile {
     display: none;
   }
-  
+
   fieldset {
     border: none;
   }
-  
+
   &__label {
     font-size: 18;
     font-weight: 400;
   }
-  
+
   &__label--red,
   &__legend {
     margin-bottom: 10px;
@@ -28,7 +28,7 @@
     text-transform: uppercase;
     color: #d22856;
   }
-  
+
   &__label--red {
     padding-left: 25px;
     margin-top: 25px;
@@ -39,10 +39,14 @@
   &__legend {
     text-align: center;
   }
-  
+
   &__required {
     text-align: center;
     text-transform: uppercase;
+    
+    &--desk {
+      display: none;
+    }
 
     &--red {
       color: #d22856;
@@ -50,10 +54,19 @@
   }
 }
 
-.full-name,
-.contacts {
+.full-name {
   margin-top: 30px;
-  margin-bottom: -60px;
+}
+
+.contacts {
+  min-height: 255px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  
+  legend {
+    position: absolute;
+    visibility: hidden;
+    }
 }
 
 .full-name input,
@@ -68,9 +81,8 @@
 
 .attainment,
 .which-app {
-  margin-top: 30px;
+  margin-top: 0px;
   background-color: #f2f2f2;
-  z-index: 1;
 }
 
 .attainment legend,
@@ -89,13 +101,9 @@
   margin-right: 20px;
 }
 
-.contacts {
-  margin-bottom: -260px;
-}
-
 .emotions {
   margin-top: 40px;
-  
+
   textarea {
     width: 230px;
     min-height: 160px;
@@ -132,23 +140,22 @@
       font-size: 18px;
       line-height: 30px;
     }
-    
+
     &__slogan--nomobile {
       display: block;
     }
-    
+
     fieldset {
       border: 2px solid #e5e5e5;;
     }
   }
 
-
   .full-name {
-  
+
     label{
       display: inline-block;
     }
-  
+
     input {
       width: 460px;
       margin-bottom: 40px;
@@ -160,7 +167,7 @@
   }
 
   .contacts {
-   margin-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   .attainment {
@@ -185,7 +192,7 @@
     display: inline-block;
     width: 300px;
     text-align: right;
-    
+
     &--desk {
       display: none;
     }
@@ -193,7 +200,17 @@
 }
 
 @media (min-width: 1200px) {
-  
+
+  .form {
+    &__slogan {
+      width: 760px;
+
+      &--nomobile {
+        display: inline-block;
+      }
+    }
+  }
+
   .full-name {
     float: left;
     display: block;
@@ -240,7 +257,7 @@
       margin-bottom: 60px;
     }
   }
-  
+
   .attainment {
   
     label {
@@ -248,7 +265,7 @@
       width: 260px;
     }
   }
-  
+
   .emotions {
     textarea {
       width: 770px;
@@ -256,7 +273,7 @@
       margin: 25px 60px;
     }
   }
-  
+
   .form__required {
     width: 405px;
     margin-left: 190px;

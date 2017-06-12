@@ -22,7 +22,7 @@
 }
 
 .row__title {
-  color: #fff;
+  color: #ffffff;
   background-color: #283645;
 
   &--hit {
@@ -58,6 +58,25 @@
   .price {
     min-height: 380px;
     margin-bottom: 45px;
+    
+    &__table {
+      left: 0;
+      width: 620px;
+      margin-left: 20px;
+    }
+  }
+  
+  .cell__icon {
+    font-size: 0;
+    background-position: 50% 50%;
+  }
+  
+  .row__title {
+    padding: 19px 0;
+  }
+  
+  .price__table td {
+    padding: 10px 10px;
   }
 }
 
@@ -65,5 +84,19 @@
   .price {
     min-height: 525px;
     margin-bottom: 70px;
+    
+    &__table {
+      left: 0;
+      width: 940px;
+      margin-left: 120px;
+    }
+  }
+  
+  .row__title {
+    padding: 19px 0px;
+  }
+  
+  .cell__title {
+    width: 235px;
   }
 }
