@@ -5,32 +5,25 @@
     <title>Pink</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
   <body>
     <header class="header header--index">
-      <nav class="main-nav">
-        <div class="container">
-          <ul class="main-nav__list">
-            <li>
-              <a class="main-nav__a"><img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink">
-              </a>
-              <button class="main-nav__btn main-nav__btn--clouse"><img src="img/icon-menu-cross.svg" alt="Закрыть"></button>
-              <button class="main-nav__btn main-nav__btn--menu"><img src="img/icon-menu-burger.svg" alt="Меню"></button>
-            </li>
-            <li><a class="main-nav__a  main-nav__a--active">Главная</a></li>
-            <li><a class="main-nav__a" href="photo.html">Фотографии</a></li>
-            <li><a class="main-nav__a" href="form.html">Конкурс</a></li>
-            <li><a class="main-nav__a" href="https://htmlacademy.ru">Html academy</a></li>
-          </ul>
-        </div>
-      </nav>
+      <nav class="main-nav main-nav--opened  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__items">
+              <li class="main-nav__item  main-nav__logo   main-nav__item--active"><a><img src="img/logo-pink-white-mobile.svg" width="78" height="22" alt="Pink"></a></li>
+              <li class="main-nav__item"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML_Academy</a></li>
+            </ul>
+        </nav>
 
       <div class="download">
       <h1 class="download__title">Взгляните на жизнь иначе!</h1>
-        <div class="container">
+        <div class="download-wrapper">
           <a class="btn btn--download" href="#">Скачать приложение</a>
           <div class="download-links">
             <a class="download-links__a  download-links__a--apl" href="#">Apple</a>
@@ -89,14 +82,6 @@
                 <cite class="reviews__autor-name">Николай Петров<span class="reviews__autor-name--discr">25 лет, водитель трамвая</span></cite>
                 <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
-            <!--  <blockquote class="reviews__slide">
-                <cite class="reviews__autor-name">Николай Петров</cite>
-                <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </blockquote>
-              <blockquote class="reviews__slide">
-                <cite class="reviews__autor-name">Николай Петров</cite>
-                <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </blockquote> -->
             </div>
           </div>
           <div class="reviews__pagination  slider__pagination">
@@ -185,7 +170,7 @@
 
       <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <h2 class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</h2>
+      <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <div class="contacts__item">
           <b class="contacts__item-title">Звоните:</b>
           <p>+7 (812) 555-66-66</p>
@@ -196,7 +181,7 @@
         </div>
         <div class="contacts__item">
           <b class="contacts__item-title">Приезжайте в гости:</b>
-          <p>ул. Большаяc <br> Конюшенная, 19/8</p>
+          <p>ул. Большая <br> Конюшенная, 19/8</p>
         </div>
       </section>
 
@@ -205,21 +190,24 @@
     </main>
 
     <footer class="footer">
-      <section  class="footer__logo">
+      <section  class="footer__item footer__item--logo">
       <h2 class="visually-hidden">Логотип</h2>
         <a><img src="img/logo-pink-blue-mobile.svg" width="140" height="40" alt="Pink"></a>
       </section>
-      <section class="footer__social">
+      <section class="footer__item footer__item--social">
       <h2 class="visually-hidden">Соцеальные сети</h2>
         <a class="social-link social-link--tt" href="https://vk.com/htmlacademy">Твиттер</a>
         <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
         <a class="social-link social-link--yo" href="https://www.instagram.com/htmlacademy">Ютюб</a>
       </section>
-      <section class="footer__copiright">
+      <section class="footer__item footer__item--copiright">
       <h2 class="visually-hidden">Копирайт</h2>
         <b>Разработано</b>
         <a class="footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
       </section>
     </footer>
+    
+    <script src="js/script.js"></script>
+    
   </body>
 </html>

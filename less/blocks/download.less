@@ -1,9 +1,16 @@
+.container() {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .download {
-  position: absolute;
-  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 320px;
   min-height: 250px;
-  text-align: center;
+  margin-top: 400px;
+  
   background-color: #1d2631;
 
   &__title {
@@ -20,7 +27,9 @@
   }
 
   &__discr {
+    .container();
     margin-bottom: 30px;
+    
     text-align: center;
     font-size: 14px;
     line-height: 24px;
@@ -29,22 +38,21 @@
 }
 
 .btn--download {
-  margin-top: 30px;
+  .container();
+  margin-top: 18px;
 }
 
 .download-links {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  width: 215px;
   height: 60px;
-
-  margin-top: 30px;
+  margin: 30px auto;
+  margin-bottom: 19px;
+  
   list-style-type: none;
 
   &__a {
-  display: inline-block;
-
   width: 60px;
   height: 60px;
   text-indent: -9999px;
@@ -65,40 +73,67 @@
 
 @media (min-width: 768px) {
   .download {
-    width: 400px;
-    bottom: 70px;
-    text-align: left;
+    width: 300px;
+    margin-top: 64px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+    
     background-color: transparent;
 
     &__title {
       position: relative;
+      left: -13px;
       visibility: visible;
-
-      margin-left: 40px;
       text-align: center;
+      line-height: 48px;
     }
 
     &__discr {
-      width: 360px;
+      width: 300px;
       font-size: 18px;
     }
   }
-
-  .download-links {
-    margin-left: 20px;
+  
+  .btn--download {
+    width: 296px;
+    margin-top: 5px;
   }
 
-  .btn--download {
-    margin-left: 20px;
-    margin-top: 30px;
+  .download-links {
+    margin-top: 49px;
+    margin-bottom: 30px;
+    margin-left: 40px;
   }
 }
 
 @media (min-width: 1200px) {
   .download {
-    display: block;
-    left: 120px;
-    bottom: 90px;
-    width: 310px;
+    align-items: flex-start;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 80px;
+    
+    &__title {
+      left: 13px;
+      width: 240px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  
+  .download-wrapper {
+    width: 300px;
+  }
+  
+  .btn--download {
+    margin-top: 17px;
+    padding: 17px 0;
+    font-size: 21px;
+    line-height: 18px;
+  }
+  
+  .download-links {
+    margin-top: 65px;
+    margin-bottom: 50px;
   }
 }

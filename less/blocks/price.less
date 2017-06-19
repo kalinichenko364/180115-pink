@@ -1,23 +1,35 @@
 .price {
-  position: relative;
-  min-height: 470px;
+  overflow: hidden;
+  min-height: 475px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   background-color: #f2f2f2;
-  margin-bottom: 40px;
-
+  
+  .slider__wrapper {
+    position: relative;
+    float: left;
+    left: 23%;
+    }
+  
   &__table {
-    position: absolute;
-    left: -440px;
-    width: 1030px;
-    margin-top: 85px;
+    position: relative;
+    float: left;
+    right: 50%;
+    width: 1010px;
+    margin-top: 90px;
     text-transform: uppercase;
-    background-color: #fff;
+    background-color: #ffffff;
     border-collapse: collapse;
   }
 }
 
-.row__title,
+.row__title {
+  padding: 19px 18px;
+  border: 2px solid #e5e5e5;
+}
+
 .price__table td {
-  padding: 19px 20px;
+  padding: 17px 18px;
   border: 2px solid #e5e5e5;
 }
 
@@ -41,9 +53,12 @@
   margin-bottom: 5px;
 }
 
+.cell__title {
+}
+
 .cell__icon {
   display: inline-block;
-  width: 245px;
+  width: 240px;
 }
 
 .cell__icon--yes {
@@ -54,49 +69,92 @@
   background: url("../img/icon-no.svg") no-repeat 100% 50%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {  
   .price {
+    .slider__wrapper {
+      position: static;
+    }
+    
     min-height: 380px;
-    margin-bottom: 45px;
 
     &__table {
-      left: 0;
+      position: static;
       width: 620px;
       margin-left: 20px;
+      margin-top: 93px;
     }
   }
 
-  .cell__icon {
-    font-size: 0;
-    background-position: 50% 50%;
+  .row__title {
+    padding: 14px 0;
+  }
+  
+  .row__title-name {
+    font-size: 16px;
   }
 
-  .row__title {
-    padding: 19px 0;
+  .row__title-price {
+  margin-top: 3px;
+  margin-bottom: 0;
+  font-size: 18px;
   }
 
   .price__table td {
-    padding: 10px 10px;
+    padding: 3px 10px;
+  }
+  
+  .cell__title {
+    padding: 0 5px;
+    text-transform: none;
+  }
+  
+  .cell__icon {
+    width: 120px;
+    height: 32px;
+    font-size: 0;
+    background-position: 55% 50%;
   }
 }
 
 @media (min-width: 1200px) {
+  
+  
   .price {
-    min-height: 525px;
-    margin-bottom: 70px;
+    min-height: 470px;
+    padding-top: 52px;
+    margin-top: 40px;
+    margin-bottom: 22px;
 
     &__table {
-      left: 0;
       width: 940px;
-      margin-left: 120px;
+      margin-left: 130px;
     }
   }
 
   .row__title {
-    padding: 19px 0px;
+    padding: 18px 0px;
+  }
+  
+  .row__title-name {
+    font-size: 18px;
+  }
+
+  .row__title-price {
+  font-size: 24px;
+  }
+  
+  .price__table td {
+    padding: 3px 10px;
   }
 
   .cell__title {
-    width: 235px;
+    padding: 0 10px;
+  }
+  
+  .cell__icon {
+    width: 165px;
+    height: 44px;
+    font-size: 0;
+    background-position: 65% 50%;
   }
 }

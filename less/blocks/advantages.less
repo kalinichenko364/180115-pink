@@ -1,12 +1,13 @@
 .advantages {
-  margin-top: 310px;
-  margin-bottom: 55px;
+  margin-top: 41px;
+  margin-bottom: 47px;
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 
     text-align: center;
     font-size: 24px;
+    line-height: 28px;
     font-weight: 300;
   }
 
@@ -20,15 +21,22 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    padding-top: 40px;
+    padding-top: 64px;
   }
 
   &__item {
-    padding: 1px 20px;
+    padding: 0 20px;
+    margin-bottom: 33px;
+    
+    p {
+      margin-top: 10px;
+    }
   }
 
   &__item-title {
+    margin-bottom: 0;
     font-size: 18px;
+    line-height: 24px;
     font-weight: 700;
     color: #000000;
   }
@@ -36,7 +44,7 @@
 
 @media (min-width: 768px) {
   .advantages {
-    margin-top: 0px;
+    margin-top: 59px;
     margin-bottom: 55px;
 
     text-align: center;
@@ -49,20 +57,34 @@
     &__title:nth-child(2) {
       display: inline-block;
       width: 340px;
-      line-height: 40px;
+      margin-top: 10px;
+      line-height: 48px;
     }
 
     &__list {
-      float: right;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
       width: 350px;
-      padding-top: 55px;
+      min-height: 365px;
+      padding-top: 53px;
       text-align: left;
     }
+    
+    &__item {
+    padding: 0 20px;
+    margin-bottom: 3px;
+    
+    p {
+      margin-top: 12px;
+    }
+  }
 
     &__list-wrapper {
       min-height: 485px;
       margin-top: 50px;
-      background: #f2f2f2 url("../img/iphone-screen-mobile@1x.png") no-repeat 10% 120%;
+      background: #f2f2f2 url("../img/iphone-screen-mobile@1x.png") no-repeat 5% 0%;
+      background-size: 270px;
     }
   }
 }
@@ -83,21 +105,23 @@
     }
 
     &__list-wrapper {
+      width: 1200px;
       min-height: 600px;
-      margin-top: 80px;
-      background: none;
+      margin-top: 85px;
+      background: #f2f2f2;
     }
 
     &__list {
-      width: 1200px;
+      flex-direction: row;
+      width: 960px;
+      margin: 0 auto;
       padding-top: 55px;
-      text-align: center;
     }
 
     &__item {
-      display: inline-block;
-      width: 310px;
-      padding-top: 270px;
+      text-align: center;
+      width: 313px;
+      padding-top: 267px;
       background: #f2f2f2 url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 0%;
 
       p {
@@ -111,7 +135,7 @@
     &__item-title {
       display: inline-block;
       width: 230px;
-      margin-bottom: 8px;
+      margin-bottom: 14px;
       font-size: 30px;
       line-height: 30px;
     }

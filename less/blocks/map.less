@@ -1,19 +1,21 @@
 .map {
   height: 200px;
-  margin-top: 60px;
-  background: url("../img/icon-map-marker.svg") no-repeat 50% 60%, url("../img/bg-map-mobile@1x.png") no-repeat;
+  background: 
+    /*url("../img/icon-map-marker.svg") no-repeat 50% 60%,*/ url("../img/bg-map-mobile@1x.png") no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
   .map {
     height: 375px;
-    background: url("../img/icon-map-marker.svg") no-repeat 50% 100%, url("../img/bg-map-mobile@1x.png") no-repeat;
+    margin-top: -28px;
   }
 }
 
 @media (min-width: 1200px) {
   .map {
-    height: 300px;
-    margin-top: 440px;
+    height: 500px;
+    margin-top: 0px;
+    margin-bottom: 80px;
   }
 }
