@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  
+
   width: 100%;
   min-height: 65px;
   margin: 0 auto;
@@ -12,18 +12,18 @@
     text-align: center;
     font-weight: 700;
   }
-  
+
   &__item {
     border-bottom: 1px solid #000000;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
-  
+
   &__logo {
     padding-top: 4px;
     padding-left: 0;
     text-align: left;
   }
-  
+
   &__logo img{
     width: 80px;
     min-height: 22px;
@@ -32,20 +32,19 @@
   &__item a {
     display: block;
     padding: 16px;
-    
+
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
   }
-  
+
   &__item a[href] {
     &:hover {
       box-shadow: inset 0 1px 0 rgb(0, 0, 0);
     }
   }
-    
 }
 
 .main-nav__toggle {
@@ -53,16 +52,15 @@
     top: 0;
     right: 0;
     z-index: 2;
-    
+
     display: block;
     width: 70px;
     height: 50px;
-    
+
     font-size: 0;
-    
+
     background-color: #283645;
     cursor: pointer;
-    
     border: none;
   }
 
@@ -71,10 +69,10 @@
   position: absolute;
   top: 23px;
   left: 17px;
-  
+
   width: 36px;
   height: 3px;
-  
+
   background-color: #ffffff;
   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
@@ -97,26 +95,26 @@
     position: absolute;
     top: 30px;
     left: 25px;
-    
+
     width: 30px;
     height: 5px;
-    
+
     background-color: #ffffff;
   }
-  
+
   &::before {
     transform: rotate(45deg);
   }
-  
+
   &::after {
     transform: rotate(-45deg);
   }
-  
+
   &:hover::before,
   &:hover::after {
     background-color: rgb(210, 40, 86);
   }
-  
+
   &:active::before,
   &:active::after {
     background-color: rgba(210, 40, 86, 0.3);
@@ -126,20 +124,19 @@
 
 @media (min-width: 768px) {
   .main-nav {
-    
+
     &__item a {
       padding: 16px;
       padding-bottom: 15px;
     }
-    
+
     &__logo {
       padding-top: 28px;
       padding-bottom: 18px;
       padding-left: 73px;
-      
     }
   }
-  
+
   .main-nav--opened .main-nav__toggle {
     &::before,
     &::after {
@@ -147,6 +144,7 @@
     }
   }
 }
+
 
 @media (max-width: 1199px) {
   .main-nav--closed .main-nav__item {
@@ -156,21 +154,22 @@
       display: block;
     }
   }
-  
+
   .main-nav--opened {
     background-color: #283645;
   }
-  
+
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 }
 
+
 @media (min-width: 1200px) {
   .main-nav {
     display: flex;
     width: 940px;
-    
+
     &__item a {
       padding-top: 45px;
       font-size: 18px;
@@ -178,38 +177,38 @@
       font-weight: 400;
       text-transform: none;
     }
-    
+
     &__items {
       display: flex;
       justify-content: space-between;
       width: 960px;
     }
-    
+
     &__item {
       margin-right: 52px;
       border: none;
       box-shadow: none;
     }
-    
+
     &__item:last-child {
       height: 20px;
       margin-right: 0;
     }
-    
+
     &__logo {
       width: 315px;
       margin-right: 0;
       padding-top: 0;
       padding-left: 52px;
     }
-    
+
     &__item a[href] {
       &:hover {
         box-shadow: none;
       }
     }
   }
-  
+
   .main-nav__toggle {
     display: none;
   }
