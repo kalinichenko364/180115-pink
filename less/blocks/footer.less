@@ -1,49 +1,42 @@
 .footer {
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-
-  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  min-height: 200px;
   margin-top: 40px;
 
   &--index {
-    display: none;
-  }
-
-  &__logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: 280px;
-  }
-
-  &__social {
-    display: inline-block;
-    vertical-align: middle;
-    width: 280px;
-    margin-top: 40px;
-  }
-
-  &__copiright {
-    display: inline-block;
-    vertical-align: middle;
-    width: 280px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  &__copiright b {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
   }
 
   &__copiright-link {
     display: inline-block;
-    vertical-align: middle;
-    width: 30px;
-    height: 40px;
+    vertical-align: bottom;
+    width: 34px;
+    height: 34px;
     background: url("../img/logo-htmlacademy.svg") no-repeat 50% 50%;
     text-indent: -9999px;
+  }
+}
+
+.footer__item {
+
+  &--logo {
+    width: 150px;
+    height: 50px;
+  }
+
+  &--social {
+    width: 190px;
+  }
+
+  &--copiright {
+    width: 145px;
+
+    b {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -75,52 +68,42 @@
 }
 
 @media (min-width: 768px) {
+  .container() {
+    width: 620px;
+    margin: 0 auto;
+  }
 
   .footer {
-    min-height: 130px;
-    margin-top: 60px;
-
-    &--index {
-      display: inline-block;
-      width: 660px;
-    }
-
-    &__logo {
-      width: 150px;
-      float: left;
-      margin-top: -5px;
-    }
-
-    &__social {
-      float: left;
-      width: 320px;
-      margin-top: -5px;
-    }
-
-    &__copiright {
-      float: right;
-      width: 180px;
-      margin-top: 5px;
-      margin-bottom: 40px;
-    }
+    .container();
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
   }
 }
 
 @media (min-width: 1200px) {
   .footer {
     width: 960px;
-    margin: 0 auto;
-    margin-left: 130px;
-    min-height: 200px;
-    margin-top: 100px;
+    min-height: 60px;
+    margin-bottom: 80px;
+  }
 
-    &__social {
-      width: 640px;
-    }
+  .footer__item--logo {
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
 
-    &__copiright {
-      width: 180px;
-      margin-top: -50px;
-    }
+  .footer__item--social {
+    width: 175px;
+    margin-left: 10px;
+  }
+
+  .social-link {
+    margin-right: 6px;
+  }
+
+  .footer__item--copiright {
+    width: 175px;
   }
 }

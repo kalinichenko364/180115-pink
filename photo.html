@@ -3,146 +3,151 @@
   <head>
     <meta charset="utf-8">
     <title>Pink - Gallery</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
     <header class="header">
-      <nav class="main-nav">
-        <div class="container">
-          <ul class="main-nav__list">
-            <li>
-              <a class="main-nav__a"><img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink">
-              </a>
-              <button class="main-nav__btn main-nav__btn--clouse"><img src="img/icon-menu-cross.svg" alt="Закрыть"></button>
-              <button class="main-nav__btn main-nav__btn--menu"><img src="img/icon-menu-burger.svg" alt="Меню"></button>
-            </li>
-            <li><a class="main-nav__a" href="index.html">Главная</a></li>
-            <li><a class="main-nav__a">Фотографии</a></li>
-            <li><a class="main-nav__a" href="form.html">Конкурс</a></li>
-            <li><a class="main-nav__a  main-nav__a--active" href="https://htmlacademy.ru">Html academy</a></li>
-          </ul>
-        </div>
-      </nav>
+        <nav class="main-nav main-nav--opened  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__items">
+              <li class="main-nav__item  main-nav__logo   main-nav__item--active"><a><img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink"></a></li>
+              <li class="main-nav__item"><a href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a>Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML_Academy</a></li>
+            </ul>
+        </nav>
       <h1  class="header__title">Фотографии<br> пользователей</h1>
     </header>
 
     <main>
       <section class="gallery">
       <h2 class="visually-hidden">Галлерея</h2>
-        <p class="gallery__slogan container">
-          Взгляните на фотографии, которые выкладывают пользователи!  Видите, как не хватает ваших?
+        <p class="gallery__slogan">
+          Взгляните на фотографии, которые выкладывают пользователи!  <span class="gallery__slogan gallery__slogan--newline">Видите, как не хватает ваших?</span>
         </p>
         <div class="gallery__item gallery__item--panorama">
-          <img class="gallery__item-pict--panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="140" alt="Panorama">
-          <div class="gallery__item--discr container">
-            <p class="item-discr__author-name">Анна</p>
-            <span class="item-discr__time">(5 минут назад)</span>
-            <p class="item-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <img class="gallery__item-pict--panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="138" alt="Panorama">
+          <div class="gallery__item-discr container">
+            <p class="gallery__author-name">Анна<span class="gallery__time">(5 минут назад)</span></p>
+            <p class="gallery__item-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="gallery__like">
               <button class="gallery__like-btn" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
               <span class="gallery__like-number">Нравится: 215</span>
+            </div>
           </div>
         </div>
-        <div class="container">
-        <div class="gallery__item">
-          <img class="gallery__item-pict" src="../img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Pictures">
-          <div class="gallery__item--discr">
-            <p class="item-discr__author-name">Левон</p>
-            <span class="item-discr__time">(5 часов назад)</span>
-            <p class="item-text">Вчера он на луну летал, сегодня в руки к нам попал</p>
-            <button class="gallery__like" type="button" ><img src="../img/icon-heart.svg" alt="Лайк"></button>
-            <span class="gallery__like-number">Нравится: 356</span>
+
+        <div class="gallery__items">
+          <div class="gallery__item">
+            <img class="gallery__item-pict" src="../img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Pictures">
+            <div class="gallery__item-discr">
+              <p class="gallery__author-name">Левон<span class="gallery__time">(5 часов назад)</span></p>
+              <p class="gallery__item-text">Вчера он на луну летал, сегодня в руки к нам попал</p>
+              <div class="gallery__like">
+                <button class="gallery__like-btn" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
+              <span class="gallery__like-number">Нравится: 356</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="gallery__item container">
-          <img class="gallery__item-pict" src="../img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Pictures">
-          <div class="gallery__item--discr">
-            <p class="item-discr__author-name">Антон</p>
-            <span class="item-discr__time">(12 часов назад)</span>
-            <p class="item-text">Соседи будут рады!</p>
-            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
-            <span class="gallery__like-number">Нравится: 666</span>
+          <div class="gallery__item">
+            <img class="gallery__item-pict" src="../img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Pictures">
+            <div class="gallery__item-discr">
+              <p class="gallery__author-name">Антон<span class="gallery__time">(12 часов назад)</span></p>
+              <p class="gallery__item-text">Соседи будут рады!</p>
+              <div class="gallery__like">
+                <button class="gallery__like-btn" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
+                <span class="gallery__like-number">Нравится: 666</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="gallery__item container">
-          <img class="gallery__item-pict" src="../img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Pictures">
-          <div class="gallery__item--discr">
-            <p class="item-discr__author-name">Борис</p>
-            <span class="item-discr__time">(20 часов назад)</span>
-            <p class="item-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
-            <span class="gallery__like-number">Нравится: 215</span>
+          <div class="gallery__item">
+            <img class="gallery__item-pict" src="../img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Pictures">
+            <div class="gallery__item-discr">
+              <p class="gallery__author-name">Борис<span class="gallery__time">(20 часов назад)</span></p>
+              <p class="gallery__item-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="gallery__like">
+                <button class="gallery__like-btn" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
+                <span class="gallery__like-number">Нравится: 215</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="gallery__item container">
-          <img class="gallery__item-pict" src="../img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Pictures">
-          <div class="gallery__item--discr">
-            <p class="item-discr__author-name">Сергей</p>
-            <span class="item-discr__time">(25 часов назад)</span>
-            <p class="item-text">Самая кубанская в мире!</p>
-            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
-            <span class="gallery__like-number">Нравится: 4</span>
+          <div class="gallery__item">
+            <img class="gallery__item-pict" src="../img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Pictures">
+            <div class="gallery__item-discr">
+              <p class="gallery__author-name">Сергей<span class="gallery__time">(25 часов назад)</span></p>
+              <p class="gallery__item-text">Самая кубанская в мире!</p>
+              <div class="gallery__like">
+                <button class="gallery__like-btn" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
+                <span class="gallery__like-number">Нравится: 4</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="gallery__item container">
-          <img class="gallery__item-pict" src="../img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Pictures">
-          <div class="gallery__item--discr">
-            <p class="item-discr__author-name">Максим</p>
-            <span class="item-discr__time">(40 часов назад)</span>
-            <p class="item-text">Где снег-то?</p>
-            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
-            <span class="gallery__like-number">Нравится: 150</span>
+          <div class="gallery__item">
+            <img class="gallery__item-pict" src="../img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Pictures">
+            <div class="gallery__item-discr">
+              <p class="gallery__author-name">Максим<span class="itemgallery__time">(40 часов назад)</span></p>
+              <p class="gallery__item-text">Где снег-то?</p>
+              <div class="gallery__like">
+                <button class="gallery__like-btn" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
+                <span class="gallery__like-number">Нравится: 150</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="gallery__item container">
-          <img class="gallery__item-pict" src="../img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Pictures">
-          <div class="gallery__item--discr">
-            <p class="item-discr__author-name">Надежда</p>
-            <span class="item-discr__time">(45 часов назад)</span>
-            <p class="item-text">Всем GM и взаимные лайки!</p>
-            <button class="gallery__like" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
-            <span class="gallery__like-number">Нравится: 2560</span>
+          <div class="gallery__item">
+            <img class="gallery__item-pict" src="../img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Pictures">
+            <div class="gallery__item-discr">
+              <p class="gallery__author-name">Надежда<span class="gallery__time">(45 часов назад)</span></p>
+              <p class="gallery__item-text">Всем GM и взаимные лайки!</p>
+              <div class="gallery__like">
+                <button class="gallery__like-btn" type="button"><img src="../img/icon-heart.svg" alt="Лайк"></button>
+                <span class="gallery__like-number">Нравится: 2560</span>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </section>
 
       <div class="filter">
-      <h2 class="filter__slogan container">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
+      <h2 class="filter__slogan">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
         <div class="filter-wrapper">
-          <div class="container">
             <img class="filter-pict" src="../img/photo-7-mobile@1x.jpg" width="280" height="375" alt="Filter Pictures">
-            <form action="https://echo.htmlacademy.ru" method="get">
+            <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
               <div class="range-filter">
                 <a class="range-filter__a  range-filter__a--cro" href="#">Crop</a>
                 <a class="range-filter__a  range-filter__a--fil" href="#">Fill</a>
                 <a class="range-filter__a  range-filter__a--con" href="#">Contrast</a>
               </div>
-              <input class="btn filter-btn--upload" type="submit" value="Запостить">
-              <input class="btn filter-btn--reset" type="reset" value="Отмена">
+              <input class="btn filter-btn filter-btn--upload" type="submit" value="Запостить">
+              <input class="btn filter-btn filter-btn--reset" type="reset" value="Отмена">
             </form>
-          </div>
+
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <section  class="footer__logo">
+      <section  class="footer__item footer__item--logo">
       <h2 class="visually-hidden">Логотип</h2>
         <a><img src="img/logo-pink-blue-mobile.svg" width="140" height="40" alt="Pink"></a>
       </section>
-      <section class="footer__social">
+      <section class="footer__item footer__item--social">
       <h2 class="visually-hidden">Соцеальные сети</h2>
         <a class="social-link social-link--tt" href="https://vk.com/htmlacademy">Твиттер</a>
         <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
         <a class="social-link social-link--yo" href="https://www.instagram.com/htmlacademy">Ютюб</a>
       </section>
-      <section class="footer__copiright">
+      <section class="footer__item footer__item--copiright">
       <h2 class="visually-hidden">Копирайт</h2>
         <b>Разработано</b>
         <a class="footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
       </section>
     </footer>
+
+    <script src="js/script.js"></script>
+
   </body>
 </html>

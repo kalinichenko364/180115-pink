@@ -1,66 +1,72 @@
 .header {
+  display: flex;
+  flex-direction: column;
+
   position: relative;
-  top: 243px;
   min-height: 240px;
-  margin-bottom: 250px;
   color: #ffffff;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  background: #2b3a4a url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  background-size: cover;
 
   &--index {
-    top: 260px;
     min-height: 730px;
-    background:url("../img/iphone-hand-mobile@1x.png") no-repeat 0 40%, url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+
+    background:
+      /*url("../img/iphone-hand-mobile@1x.png") no-repeat 0 40%,*/
+      url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+    background-size: cover;
   }
 
   &__title {
+    margin-top: 22px;
+    margin-bottom: 85px;
+
     text-align: center;
     font-size : 24px;
-    line-height: 30px;
+    line-height: 29px;
     font-weight: 300;
-    padding-top: 100px;
+
+    &--form {
+      margin-top: 27px;
+      margin-bottom: 53px;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .header {
-    top: -18px;
-    min-height: 695px;
-    margin-bottom: 50px;
-    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 100%;
 
-    &&--index {
-      top: 16px;
-      min-height: 985px;
-      background:url("../img/iphone-hand-mobile@1x.png") no-repeat 96% 100%, url("../img/bg-back-mobile@1x.jpg") no-repeat 0% 100%;
+    &--index {
     }
 
     &__title {
-      padding-top: 440px;
+      margin-top: 65px;
+      margin-bottom: 140px;
       font-size : 50px;
-      line-height: 55px;
+      line-height: 60px;
+      font-weight: 300;
+
+      &--form {
+        margin-top: 70px;
+        margin-bottom: 79px;;
+      }
     }
   }
 }
 
 @media (min-width: 1200px) {
   .header {
-    top: -33px;
-    min-height: 400px;
-
-    margin-bottom: 85px;
-    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0% 100%;
 
     &__title {
-      padding-top: 140px;
-      font-size : 50px;
-      line-height: 55px;
+      margin-top: 73px;
+      margin-bottom: 103px;
+      line-height: 70px;
+      line-height: 58px;
     }
 
     &&--index {
       min-height: 853px;
       margin-bottom: 85px;
-
-      background:url("../img/iphone-hand-mobile@1x.png") no-repeat 96% 100%, url("../img/bg-back-mobile@1x.jpg") no-repeat 0% 100%;
     }
   }
 }

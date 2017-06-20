@@ -3,73 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Pink - Form</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
   <body>
     <header class="header">
-      <nav class="main-nav">
-        <div class="container">
-          <ul class="main-nav__list">
-            <li>
-              <a class="main-nav__a"><img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink">
-              </a>
-              <button class="main-nav__btn  main-nav__btn--clouse"><img src="img/icon-menu-cross.svg" alt="Закрыть"></button>
-              <button class="main-nav__btn  main-nav__btn--menu"><img src="img/icon-menu-burger.svg" alt="Меню"></button>
-            </li>
-            <li><a class="main-nav__a" href="index.html">Главная</a></li>
-            <li><a class="main-nav__a" href="photo.html">Фотографии</a></li>
-            <li><a class="main-nav__a  main-nav__a--active">Конкурс</a></li>
-            <li><a class="main-nav__a" href="https://htmlacademy.ru">Html academy</a></li>
-          </ul>
-        </div>
-      </nav>
-      <h1  class="header__title">Конкурс на самое безбашенное <br> путешествие с Пинк</h1>
+      <nav class="main-nav main-nav--opened  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__items">
+              <li class="main-nav__item  main-nav__logo   main-nav__item--active"><a><img src="img/logo-pink-white-mobile.svg" width="80" height="20" alt="Pink"></a></li>
+              <li class="main-nav__item"><a href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a>Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML_Academy</a></li>
+            </ul>
+        </nav>
+      <h1  class="header__title header__title--form">Конкурс на самое безбашенное<br> путешествие с Пинк</h1>
     </header>
 
     <main>
-      <form class="form container"  action="https://echo.htmlacademy.ru" method="get">
+      <form class="form"  action="https://echo.htmlacademy.ru" method="get">
         <h2 class="visually-hidden">Форма</h2>
-        <p class="form__slogan container">
+        <p class="form__slogan">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span class="form__slogan--nomobile">Пожалуйста, заполните форму ниже:</span>
         </p>
-        <div class="full-name container">
-          <label class="form__label form__label--red" for="surname" >Фамилия: </label>
-          <input class="form_input" id="surname" type="text" name="surname" value="Укажите фамилию *">
-          <label class="form__label form__label--red" for="name">Имя: </label>
-          <input class="form_input" id="name" type="text" name="name" value="Введите ваше имя *">
-          <label class="form__label form__label--red" for="patronymic">Отчество: </label>
-          <input class="form_input" id="patronymic" type="text" name="patronymic" value="Ну и отчество тоже">
+        <div class="full-name">
+          <div class="full-name__wrapper">
+            <label class="form__label form__label--red" for="surname" >Фамилия: </label>
+            <input class="form_input" id="surname" type="text" name="surname" value="Укажите фамилию *">
+          </div>
+          <div class="full-name__wrapper">
+          <label class="form__label form__label--red" for="name">Имя:   </label>
+            <input class="form_input" id="name" type="text" name="name" value="Введите ваше имя *">
+          </div>
+          <div class="full-name__wrapper">
+            <label class="form__label form__label--red" for="patronymic">Отчество: </label>
+            <input class="form_input" id="patronymic" type="text" name="patronymic" value="Ну и отчество тоже">
+          </div>
         </div>
 
-        <fieldset class="which-app">
-          <legend class="form__legend">С каким приложением путешествовали?</legend>
-          <label class="form__label" for="apl">
-            <input class="which-app__input  which-app__input--active" id="apl" type="radio" name="app" value="apl" checked>
-            Pink для iOS
-          </label>
-          <label class="form__label" for="and">
-            <input class="which-app__input" id="and" type="radio" name="app" value="and">
-            Pink на Android
-          </label>
-          <label class="form__label" for="win">
-            <input class="which-app__input" id="win" type="radio" name="app" value="win">
-            Windows Phone
-          </label>
-        </fieldset>
-
-        <fieldset class="contacts">
-        <legend class="form__legend">Контактная информация</legend>
-          <label class="form__label form__label--red" for="tel">Номер телефона</label>
-          <input class="form_input" id="tel" type="tel" name="tel" value="Номер, пожалуйста">
-          <label class="form__label form__label--red" for="email">Адрес почты</label>
-          <input class="form_input" id="email" type="email" name="email" value="Введите почту *">
-        </fieldset>
-
         <fieldset class="attainment">
-          <legend class="form__legend container">Ваши безбашенные <br> достижения в путешествии</legend>
+          <legend class="form__legend">Ваши безбашенные <span class="newline">достижения в путешествии</span></legend>
           <label class="form__label">
             <input class="input__checkbox  input__checkbox--active" type="checkbox" name="shark" checked>
             Сделал селфи с акулой
@@ -96,31 +73,64 @@
           </label>
         </fieldset>
 
+        <fieldset class="contacts-form">
+        <legend class="form__legend">Контактная информация</legend>
+          <div class="form_input__wrapper">
+            <label class="form__label form__label--red" for="tel">Номер телефона</label>
+            <input class="form_input" id="tel" type="tel" name="tel" value="Номер, пожалуйста">
+          </div>
+          <div class="form_input__wrapper">
+            <label class="form__label form__label--red" for="email">Адрес почты</label>
+            <input class="form_input" id="email" type="email" name="email" value="Введите почту *">
+          </div>
+        </fieldset>
+
+        <fieldset class="which-app">
+          <legend class="form__legend">С каким приложением путешествовали?</legend>
+          <label class="form__label" for="apl">
+            <input class="which-app__input  which-app__input--active" id="apl" type="radio" name="app" value="apl" checked>
+            Pink для iOS
+          </label>
+          <label class="form__label" for="and">
+            <input class="which-app__input" id="and" type="radio" name="app" value="and">
+            Pink на Android
+          </label>
+          <label class="form__label" for="win">
+            <input class="which-app__input" id="win" type="radio" name="app" value="win">
+            Windows Phone
+          </label>
+        </fieldset>
+
         <fieldset class="emotions">
-          <legend class="form__legend container">Опишите свои эмоции</legend>
+          <legend class="form__legend">Опишите свои эмоции</legend>
           <textarea class="form_input  form_input--textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
-        <input class="form-btn" type="submit" value="Отправить форму">
-        <p class="form__required"><span class="form__required--red">*</span> — Обязательные <span  class="form__required--desk">для заполнения</span> поля</p>
+        <div class="form-btn__wrapper">
+          <input class="form-btn" type="submit" value="Отправить форму">
+          <p class="form__required"><span class="form__required--red">*</span> — Обязательные <span  class="form__required--desk">для заполнения</span> поля</p>
+        </div>
       </form>
     </main>
 
     <footer class="footer">
-      <section  class="footer__logo">
+      <section  class="footer__item footer__item--logo">
       <h2 class="visually-hidden">Логотип</h2>
         <a><img src="img/logo-pink-blue-mobile.svg" width="140" height="40" alt="Pink"></a>
       </section>
-      <section class="footer__social">
+      <section class="footer__item footer__item--social">
       <h2 class="visually-hidden">Соцеальные сети</h2>
         <a class="social-link social-link--tt" href="https://vk.com/htmlacademy">Твиттер</a>
         <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
         <a class="social-link social-link--yo" href="https://www.instagram.com/htmlacademy">Ютюб</a>
       </section>
-      <section class="footer__copiright">
+      <section class="footer__item footer__item--copiright">
       <h2 class="visually-hidden">Копирайт</h2>
         <b>Разработано</b>
         <a class="footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
       </section>
     </footer>
+
+    <script src="js/script.js"></script>
+
   </body>
 </html>

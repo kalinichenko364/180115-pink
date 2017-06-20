@@ -5,14 +5,18 @@
 @media (min-width: 768px) {
   .research {
     display: block;
+    min-height: 280px;
     margin-bottom: 0;
 
     &__item {
-      float: right;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
       width: 330px;
 
       p {
         margin-top: 10px;
+        margin-bottom: 9px;
       }
       a {
         color: #d22856;
@@ -34,7 +38,7 @@
   }
 
   .research-wrapper {
-    min-height: 420px;
+    min-height: 340px;
     background: url("../img/timer.svg.png") no-repeat 5% 0;
   }
 }
@@ -43,13 +47,12 @@
   .research {
 
     &__item {
-      width: 510px;
-      margin-top: 75px;
-      margin-right: 190px;
+      width: 530px;
+      margin-right: 174px;
 
       p {
         margin-top: 24px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
       }
     }
 
@@ -62,7 +65,8 @@
   }
 
   .research-wrapper {
-    min-height: 420px;
+    min-height: 362px;
+    padding-top: 73px;
     background: #f2f2f2 url("../img/timer.svg.png") no-repeat 17% 50%;
   }
 }
