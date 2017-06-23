@@ -1,8 +1,3 @@
-.container() {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .filter-wrapper {
   display: flex;
   flex-direction: column;
@@ -32,7 +27,7 @@
 }
 
 .filter-pict {
-  .container();
+  margin-left: 20px;
 }
 
 .range-filter {
@@ -40,7 +35,7 @@
     justify-content: center;
     height: 100px;
     margin-top: 30px;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     padding-bottom: 30px;
     list-style-type: none;
     border-bottom: 1px solid #ebecec;
@@ -54,22 +49,29 @@
 
       width: 60px;
       height: 60px;
-
-      text-indent: -9999px;
+      
+      &:hover .svg{
+        fill-opacity: 0.5;
+      }
 
       &--cro {
+        padding-top: 5px;
         margin-left: 3px;
-        background: url("../img/icon-editor-crop.svg") no-repeat 0% 50%;
       }
 
       &--fil {
+        padding-top: 5px;
         margin-left: 20px;
-        background: url("../img/icon-editor-fill.svg") no-repeat 0% 50%;
       }
 
       &--con {
+        padding-top: 10px;
         margin-left: 27px;
-        background: url("../img/icon-editor-contrast.svg") no-repeat 0% 50%;
+      }
+      
+      &--activ .svg{
+        fill: #d22856;
+        fill-opacity: 1;
       }
     }
   }
@@ -78,11 +80,44 @@
   .container();
   padding: 15px 0;
   margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.filter-btn--upload {
+  color: #d22856;
+  border-color: #d22856;
+  margin-bottom: 12px;
+  
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+  
+  &:active {
+    color: #dc6782;
+  }
+}
+
+.filter-btn--reset {
+  color: #283645;
+  border-color: #283645;
+  opacity: 0.1;
+  
+  &:hover {
+    opacity: 0.3;
+  }
+  
+  &:active {
+    color: #ffffff;
+    background-color: #283645;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
   .filter {
     margin-top: 27px;
+    margin-bottom: 9px;
 
     &__slogan {
       margin-bottom: 69px;
@@ -100,8 +135,6 @@
   }
 
   .filter-pict {
-    width: 300px;
-    height: 400px;
     margin-left: 20px;
     margin-right: 48px;
   }
@@ -126,18 +159,15 @@
       &--cro {
         margin-top: -20px;
         margin-bottom: 30px;
-        background-size: 25px 25px;
       }
 
       &--fil {
         margin-top: -25px;
-        background-size: 22px 22px;
       }
 
       &--con {
         margin-top: -5px;
         margin-left: 4px;
-        background-size: 15px 15px;
         border: none;
       }
     }
@@ -151,7 +181,7 @@
     }
 
     &--reset {
-      margin-top: 12px;
+      margin-top: 22px;
     }
   }
 }
@@ -172,13 +202,11 @@
   }
 
   .filter form {
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-left: 43px;
   }
-
+  
   .range-filter {
-    margin-bottom: 70px;
+    margin-bottom: 110px;
 
     &__a {
       height: 70px;
@@ -189,19 +217,16 @@
       &--cro {
         margin-top: -20px;
         margin-bottom: 30px;
-        background-size: 45px 45px;
       }
 
       &--fil {
         margin-top: -25px;
         margin-left: 2px;
-        background-size: 45px 45px;
       }
 
       &--con {
         margin-top: -5px;
         margin-left: 7px;
-        background-size: 33px 33px;
       }
     }
   }
@@ -210,13 +235,19 @@
     width: 183px;
     height: 55px;
     padding: 16px 0;
+    
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
 
     &--upload {
-      margin-right: 45px;
+      margin-right: 0px;
     }
 
     &--reset {
       margin-top: 0;
+      margin-right: 0px;
     }
   }
 }

@@ -38,8 +38,22 @@
   }
 
   .research-wrapper {
+    position: relative;
     min-height: 340px;
-    background: url("../img/timer.svg.png") no-repeat 5% 0;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat:  no-repeat, no-repeat;
+    background-position:  9% 41%, 5% 0;
+    background-size: 200px, 240px;
+    
+    &::after {
+      content: "24";
+      position: absolute;
+      top: 140px;
+      left: 85px;
+      font-size: 96px;
+      font-weight: 700;
+      color: #d22856;
+    }
   }
 }
 
@@ -67,6 +81,14 @@
   .research-wrapper {
     min-height: 362px;
     padding-top: 73px;
-    background: #f2f2f2 url("../img/timer.svg.png") no-repeat 17% 50%;
+    background-color: #f2f2f2;
+    background-position:  16% 50%, 14% 22%;
+    background-size: 255px, 300px;
+    
+    &::after {
+      top: 195px;
+      left: 210px;
+      font-size: 120px;
+    }
   }
 }

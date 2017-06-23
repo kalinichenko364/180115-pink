@@ -1,8 +1,3 @@
-.container() {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .gallery {
   display: flex;
   flex-direction: column;
@@ -28,9 +23,31 @@
 
   &__item {
     margin-bottom: 20px;
+    
+    &--panorama {
+      position: relative;
+      
+      &::before {
+        content: "Панорама дня";
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 141px;
+        height: 35px;
+        padding: 4px 20px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 700;
+        background-color: #d22856;
+        box-sizing: border-box;
+      }
+    }
   }
 
   &__item-discr {
+    .container();
     display: flex;
     flex-wrap: wrap;
     width: 252px;
@@ -83,21 +100,20 @@
 
 
 @media (min-width: 768px) {
-  .container() {
-  width: 620px;
-  margin: 0 auto;
-}
-
+  .container() { 
+    width: 620px;
+  }
+  
   .gallery {
     flex-direction: row;
     flex-wrap: wrap;
     width: 660px;
-    margin-top: 95px;
+    margin-top: 94px;
 
     &__slogan {
       width: 440px;
       margin: 0 auto;
-      margin-bottom: 75px;
+      margin-bottom: 73px;
       font-size: 18px;
       line-height: 30px;
 
@@ -113,31 +129,32 @@
       justify-content: space-between;
     }
 
-    &__item-pict {                 /* temporarily */
-      width: 300px;
-      height: 300px;
-
-      &--panorama {
-          width: 660px;
-          height: 510px;
-      }
-    }
-
     &__item-discr {
-      width: 240px;
+      width: 270px;
       min-height: 105px;
       padding: 25px 30px;
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+    
+    &__author-name {
+      height: 20px;
+      margin-bottom: 5px;
     }
 
     &__item-text {
-        margin-bottom: 0;
-      }
+      min-height: 60px;
+      margin-bottom: 0;
+    }
 
     &__like {
       justify-content: space-between;
+      
 
       button {
         order: 1;
+        margin-right: 0;
+        padding-right: 0;
       }
 
       span {
@@ -151,25 +168,38 @@
       margin-bottom: 20px;
 
       &--panorama {
-        width: 660px;
+        width: 100%;
+        max-width: 700px;
         margin-bottom: 49px;
         margin-left: 0;
+        
+        &::before {
+          top: 60px;
+        }
+        
+        .gallery__item-pict--panorama {
+          width: 100%;
+          max-width: 700px;
+          height: 509px;
+        }
 
         .gallery__item-discr {
           width: 560px;
           min-height: 50px;
           margin-bottom: 0;
-
-          .gallery__item-text {
+          padding: 25px 30px;
+        }
+        
+        .gallery__item-text {
             order: 1;
             width: 900px;
+            min-height: 40px;
           }
-
-          .gallery__like {
-            order: 0;
-            width: 125px;
-            margin-left: auto;
-          }
+        
+        .gallery__like {
+          order: 0;
+          width: 125px;
+          margin-left: auto;
         }
       }
     }
@@ -177,11 +207,10 @@
 }
 
 @media (min-width: 1200px) {
-  .container() {
+  .container() { 
     width: 940px;
-    margin: 0 auto;
   }
-
+  
   .gallery {
     width: 1200px;
     margin-top: 93px;
@@ -199,21 +228,6 @@
       .container();
     }
 
-    &__item-pict--panorama {                 /* temporarily */
-      width: 1200px;
-      height: 504px;
-    }
-
-    &__item-pict {                 /* temporarily */
-      width: 300px;
-      height: 400px;
-
-      &--panorama {                 /* temporarily */
-        width: 1200px;
-        height: 504px;
-      }
-    }
-
     &__like-btn {
     }
 
@@ -222,6 +236,10 @@
 
     &__slogan {
       width: 590px;
+    }
+    
+    &__author-name {
+      margin-bottom: 10px;
     }
 
     &__item-text {
@@ -235,11 +253,24 @@
       margin-bottom: 50px;
 
       &--panorama {
-        width: 1200px;
-        margin-bottom: 48px;
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 51px;
+        
+        &::before {
+          top: 55px;
+          right: 130px;
+        }
+        
+        .gallery__item-pict--panorama {
+          width: 100%;
+          max-width: 1200px;
+          height: 506px;
+        }
 
         .gallery__item-discr {
-          width: 885px;
+           width: 880px;
+           padding-bottom: 10px;
         }
       }
     }

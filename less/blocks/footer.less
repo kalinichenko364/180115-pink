@@ -6,17 +6,26 @@
   width: 320px;
   min-height: 200px;
   margin-top: 40px;
+  margin-bottom: 40px;
 
   &--index {
+    display: none;
   }
 
   &__copiright-link {
-    display: inline-block;
-    vertical-align: bottom;
-    width: 34px;
-    height: 34px;
-    background: url("../img/logo-htmlacademy.svg") no-repeat 50% 50%;
-    text-indent: -9999px;
+    
+    .htmlacademy {
+      width: 40px;
+      fill: #d22856;
+    }
+    
+    .htmlacademy:hover {
+      fill: #283645;
+    }
+    
+    .htmlacademy:active {
+      fill-opacity: 0.3;
+    }
   }
 }
 
@@ -32,7 +41,10 @@
   }
 
   &--copiright {
-    width: 145px;
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 35px;
 
     b {
       margin-right: 10px;
@@ -46,8 +58,7 @@
   width: 45px;
   height: 45px;
   margin-right: 10px;
-  text-indent: -9999px;
-  border: 3px solid #edeeef;
+  border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
 
   &:last-child {
@@ -65,6 +76,15 @@
   &--yo {
     background:  url("../img/icon-youtube.svg") no-repeat 52% 48%;
   }
+  
+  &:hover {
+    border-color: rgba(40, 54, 69, 1);
+  }
+  
+  &:active {
+    border-color: rgba(40, 54, 69, 1);
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -79,6 +99,10 @@
     justify-content: space-between;
     align-items: center;
     min-height: 120px;
+    
+    &--index {
+      display: flex;
+    }
   }
 }
 

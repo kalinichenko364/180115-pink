@@ -1,15 +1,10 @@
-.container() {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .download {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 320px;
   min-height: 250px;
-  margin-top: 400px;
+  margin-top: 390px;
 
   background-color: #1d2631;
 
@@ -39,7 +34,16 @@
 
 .btn--download {
   .container();
-  margin-top: 18px;
+  margin-top: 25px;
+  
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+  
+  &:active {
+    color: #f2ced5;
+  }
 }
 
 .download-links {
@@ -96,7 +100,7 @@
 
   .btn--download {
     width: 296px;
-    margin-top: 5px;
+    margin-top: 0px;
   }
 
   .download-links {
