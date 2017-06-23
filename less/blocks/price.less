@@ -1,199 +1,72 @@
 .price {
-  overflow: hidden;
-  min-height: 475px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  position: relative;
+
+  width: 100%;
+
   background-color: #f2f2f2;
-  background-image: url(../img/bg-triangle-white.svg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 320px;
-
-  .slider__wrapper {
-    position: relative;
-    float: left;
-    left: 23%;
-    }
-
-  &__table {
-    position: relative;
-    float: left;
-    right: 50%;
-    width: 1010px;
-    margin-top: 90px;
-    text-transform: uppercase;
-    background-color: #ffffff;
-    border-collapse: collapse;
-  }
 }
+.price::before {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
 
-.price__table td {
-  padding: 17px 18px;
-  border: 2px solid #e5e5e5;
+  background: #f2f2f2 url(../img/bg-triangle-white.svg) no-repeat;
+  background-size: 100%;
 }
+.price__container  {
+  width: 320px;
 
-.row__title {
-  padding: 19px 18px;
-  border: 2px solid #e5e5e5;
-  color: #ffffff;
-  background-color: #283645;
-
-  &:first-child {
-    border: none;
-    background-color: #f2f2f2;
-  }
-
-  &--hit {
-    background-image: url("../img/bg-hit.svg");
-    background-repeat: no-repeat;
-    position: relative;
-
-    &::after {
-      content: "ХИТ";
-      position: absolute;
-      top: 14px;
-      left: 10px;
-      color: #ffffff;
-      font-size: 14px;
-      transform: rotate(-45deg);
-    }
-  }
+  padding:  0;
+  padding-top: 90px;
+  padding-bottom: 97px;
+  margin: 0 auto;
+  overflow: hidden;
 }
-
-.row__title-name {
-  font-size: 18px;
-}
-
-.row__title-price {
-  font-size: 24px;
-  font-weight: 300;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.cell__title {
-}
-
-.cell__icon {
-  display: inline-block;
-  width: 240px;
-}
-
-.cell__icon--yes {
-  background: url("../img/icon-yes.svg") no-repeat 100% 50%;
-}
-
-.cell__icon--no {
-  background: url("../img/icon-no.svg") no-repeat 100% 50%;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .price {
-    background-size: 660px;
-
-    .slider__wrapper {
-      position: static;
-    }
-
-    min-height: 380px;
-
-    &__table {
-      position: static;
-      width: 620px;
-      margin-left: 20px;
-      margin-top: 93px;
-    }
+    position: relative;
   }
+  .price::before {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
 
-  .row__title {
-    padding: 14px 0;
-
-    &--hit {
-      background-image: url("../img/bg-hit-tablet.svg");
-
-      &::after {
-        top: 7px;
-        left: 5px;
-      }
-    }
+    background: #f2f2f2 url(../img/bg-triangle-white.svg) no-repeat;
+    background-size: 100%;
   }
+  .price__container  {
+    width: 620px;
+    margin: 0 auto;
 
-  .row__title-name {
-    font-size: 16px;
-  }
-
-  .row__title-price {
-  margin-top: 3px;
-  margin-bottom: 0;
-  font-size: 18px;
-  }
-
-  .price__table td {
-    padding: 3px 10px;
-  }
-
-  .cell__title {
-    padding: 0 5px;
-    text-transform: none;
-  }
-
-  .cell__icon {
-    width: 120px;
-    height: 32px;
-    font-size: 0;
-    background-position: 55% 50%;
+    padding-top: 90px;
+    padding-bottom: 69px;
   }
 }
-
-
-@media (min-width: 1200px) {
-
+@media (min-width: 960px) {
   .price {
-    min-height: 470px;
-    padding-top: 52px;
-    margin-top: 40px;
-    margin-bottom: 22px;
-    background-size: 1200px;
-
-    &__table {
-      width: 940px;
-      margin-left: 130px;
-    }
+    position: relative;
   }
+  .price::before {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
 
-  .row__title {
-    padding: 18px 0px;
-
-    &--hit {
-      background-image: url("../img/bg-hit.svg");
-
-      &::after {
-        top: 12px;
-        left: 10px;
-      }
-    }
+    background: #f2f2f2 url(../img/bg-triangle-white.svg) no-repeat;
+    background-size: 100%;
   }
-
-  .row__title-name {
-    font-size: 18px;
-  }
-
-  .row__title-price {
-  font-size: 24px;
-  }
-
-  .price__table td {
-    padding: 3px 10px;
-  }
-
-  .cell__title {
-    padding: 0 10px;
-  }
-
-  .cell__icon {
-    width: 165px;
-    height: 44px;
-    font-size: 0;
-    background-position: 65% 50%;
+  .price__container  {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 90px;
   }
 }

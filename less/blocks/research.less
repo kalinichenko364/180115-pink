@@ -1,94 +1,104 @@
 .research {
   display: none;
 }
-
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .research {
     display: block;
-    min-height: 280px;
-    margin-bottom: 0;
+    width: 100%;
+    background: #ffffff;
+    &__wrapper {
+      width: 620px;
+      margin: 0 auto;
+      padding: 0 20px;
+      padding-bottom: 25px;
 
-    &__item {
       display: flex;
       flex-direction: column;
-      margin-left: auto;
-      width: 330px;
+      align-items: flex-end;
+      background: #ffffff url(../img/timer-block.png) no-repeat;
+      background-size: 238px 276px;
+      background-position: 20px 55px;
+    }
+    &__description {
+      width: 310px;
+      padding-top: 95px;
+      text-align: left;
+      h2 {
+        margin: 0;
+        padding-right: 120px;
 
-      p {
-        margin-top: 10px;
-        margin-bottom: 9px;
+        color: @color-b;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+      }
+      p { margin: 0;
+        padding: 10px 0;
+
+        color: @color-p;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
       }
       a {
-        color: #d22856;
+        font-family: "Open Sans", "Arial", sans-serif;
+        color: @color-red;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
       }
-    }
-
-    &__item-title {
-      margin-top: 40px;
-      margin-bottom: 0;
-
-      font-size: 30px;
-      line-height: 36px;
-      font-weight: 700;
-
-      span {
-        display: block;
-      }
-    }
-  }
-
-  .research-wrapper {
-    position: relative;
-    min-height: 340px;
-    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
-    background-repeat:  no-repeat, no-repeat;
-    background-position:  9% 41%, 5% 0;
-    background-size: 200px, 240px;
-
-    &::after {
-      content: "24";
-      position: absolute;
-      top: 140px;
-      left: 85px;
-      font-size: 96px;
-      font-weight: 700;
-      color: #d22856;
     }
   }
 }
-
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .research {
-
-    &__item {
-      width: 530px;
-      margin-right: 174px;
-
-      p {
-        margin-top: 24px;
-        margin-bottom: 30px;
-      }
-    }
-
-    &__item-title {
-
-      span {
-        display: inline-block;
-      }
-    }
-  }
-
-  .research-wrapper {
-    min-height: 362px;
-    padding-top: 73px;
     background-color: #f2f2f2;
-    background-position:  16% 50%, 14% 22%;
-    background-size: 255px, 300px;
+    &__wrapper {
+      width: 940px;
+      margin: 0 auto;
+      padding: 0 10px;
 
-    &::after {
-      top: 195px;
-      left: 210px;
-      font-size: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      background: #f2f2f2 url(../img/timer-block.png) no-repeat;
+      background-position: 20px 65px;
+    }
+    &__description {
+      width: 575px;
+      padding-top: 155px;
+      padding-bottom: 106px;
+
+      text-align: left;
+      background-color: #f2f2f2;
+      h2 {
+        margin: 0;
+        padding: 0;
+
+        color: @color-b;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+      }
+      p {
+        margin: 0;
+        padding: 20px 0;
+        padding-right: 25px;
+
+        color: @color-p;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+      }
+      a {
+        display: inline-block;
+        padding: 10px 0;
+        font-family: "Open Sans", "Arial", sans-serif;
+        color: @color-red;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+      }
     }
   }
 }
