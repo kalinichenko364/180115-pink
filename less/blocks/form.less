@@ -90,11 +90,11 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 .form_input--textarea {
-  
+
   &:hover {
     border-color: #283645;
   }
-  
+
   &:active {
     border-color: #d22856;
   }
@@ -163,7 +163,7 @@ input[type="email"],
   .form__label {
     margin-bottom: 43px;
     position: relative;
-    
+
     &::before {
       position: absolute;
       top: -8px;
@@ -182,18 +182,18 @@ input[type="email"],
       border-radius: 50%;
       background-color: #ffffff;
     }
-    
+
     &:hover::before {
       border: 2px solid #283645;
     }
-    
+
     &:active::before {
       border: 2px solid #d22856;
       background-image: url("../img/icon-map-marker.svg");
       background-repeat: no-repeat;
     }
   }
-  
+
   .which-app__input:checked + label::after {
     content: "";
     display: block;
@@ -205,7 +205,7 @@ input[type="email"],
     background-color: #d22856;
     border-radius: 50%;
   }
-  
+
   input[type="radio"] {
     display: none;
   }
@@ -242,11 +242,11 @@ input[type="email"],
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-  
+
   &:hover {
     background-color: #1c9b5e;
   }
-  
+
   &:active {
     color: #7abb97;
     background-color: #1c9b5e;
@@ -258,7 +258,7 @@ input[type="email"],
     width: 620px;
     margin: 0 auto;
   }
-  
+
   .form {
     .container();
     flex-wrap: wrap;
@@ -373,10 +373,10 @@ input[type="email"],
     label[for="email"] {
       order: 3;
     }
-    
+
     .input-tel__wrapper {
       position: relative;
-      
+
       &::before {
         content: "";
         display: block;
@@ -392,10 +392,10 @@ input[type="email"],
         background-size: 23px;
       }
     }
-    
+
     .input-email__wrapper {
       position: relative;
-      
+
       &::before {
         content: "";
         display: block;
@@ -566,9 +566,9 @@ input[type="email"],
       width: 335px;
       margin: 0;
     }
-    
+
     .input-tel__wrapper {
-      
+
       &::before {
         top: 2px;
         right: 4px;
@@ -576,9 +576,9 @@ input[type="email"],
         height: 54px;
       }
     }
-    
+
     .input-email__wrapper {
-      
+
       &::before {
         top: 3px;
         right: 4px;
@@ -605,7 +605,7 @@ input[type="email"],
       width: 245px;
       padding-left: 52px;
       margin-right: 0;
-      
+
       &:nth-of-type(1) {
       order: 1;
       }
@@ -629,7 +629,6 @@ input[type="email"],
       &:nth-of-type(6) {
         order: 6;
       }
-   
     }
   }
 
