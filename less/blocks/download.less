@@ -1,0 +1,143 @@
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  min-height: 250px;
+  margin-top: 390px;
+
+  background-color: #1d2631;
+
+  &__title {
+    position: absolute;
+    visibility: hidden;
+
+    display: inline-block;
+    width: 190px;
+    padding-left: 20px;
+
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 300;
+  }
+
+  &__discr {
+    .container();
+    margin-bottom: 30px;
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+
+.btn--download {
+  .container();
+  margin-top: 25px;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: #f2ced5;
+  }
+}
+
+.download-links {
+  display: flex;
+  justify-content: space-between;
+  width: 215px;
+  height: 60px;
+  margin: 30px auto;
+  margin-bottom: 19px;
+
+  list-style-type: none;
+
+  &__a {
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+
+    &--apl {
+      background: url("../img/logo-apple.svg") no-repeat 50% 50%;
+    }
+
+    &--and {
+      background: url("../img/logo-android.svg") no-repeat 50% 50%;
+    }
+
+    &--win {
+      background: url("../img/logo-microsoft.svg") no-repeat 50% 50%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .download {
+    width: 300px;
+    margin-top: 64px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+
+    background-color: transparent;
+
+    &__title {
+      position: relative;
+      left: -13px;
+      visibility: visible;
+      text-align: center;
+      line-height: 48px;
+    }
+
+    &__discr {
+      width: 300px;
+      font-size: 18px;
+    }
+  }
+
+  .btn--download {
+    width: 296px;
+    margin-top: 0px;
+  }
+
+  .download-links {
+    margin-top: 49px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download {
+    align-items: flex-start;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    &__title {
+      left: 13px;
+      width: 240px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  .download-wrapper {
+    width: 300px;
+  }
+
+  .btn--download {
+    margin-top: 17px;
+    padding: 17px 0;
+    font-size: 21px;
+    line-height: 18px;
+  }
+
+  .download-links {
+    margin-top: 65px;
+    margin-bottom: 50px;
+  }
+}
