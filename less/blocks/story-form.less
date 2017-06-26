@@ -166,7 +166,6 @@
       display: block;
       box-sizing: border-box;
       width: 100%;
-
       padding: 15px 20px;
 
       color: @color-p;
@@ -476,7 +475,7 @@
         top: 11px;
         right: 2px;
 
-        width: 60px;
+        width: 62px;
         height: 60px;
 
         background: #e2e2e2 url(../img/icon-phone.svg) no-repeat center;
@@ -487,7 +486,7 @@
           top: 11px;
           right: 2px;
 
-          width: 60px;
+          width: 62px;
           height: 60px;
 
           background: #e2e2e2 url(../img/icon-mail.svg) no-repeat center;
@@ -734,16 +733,17 @@
         }
         input {
           margin: 0;
+          height: 60px;
           padding: 15px 20px;
         }
       }
       &-icon-phone::before {
-        top: 2px;
-        right: 2px;
+        top: 0px;
+        right: 0px;
         }
       &-icon-mail::before {
-        top: 2px;
-        right: 2px;
+        top: 0px;
+        right: 0px;
       }
     }
     &__wrapper-achievements {
@@ -803,6 +803,7 @@
       }
       &-field {
         max-width: 260px;
+        width: 100%;
         box-sizing: border-box;
         padding: 0;
       }
