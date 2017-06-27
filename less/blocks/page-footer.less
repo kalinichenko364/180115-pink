@@ -55,7 +55,7 @@
     }
   }
   &__copyright {
-    margin-top: 40px;
+    margin-top: 37px;
     margin-bottom: 40px;
     text-align: center;
     color: @color-p;
@@ -65,8 +65,9 @@
   }
   &__copyright-link {
     display:inline-block;
-    width:27px;
+    width:35px;
     height:35px;
+    margin-left: 7px;
     vertical-align:middle;
     text-decoration:none;
 
@@ -74,14 +75,14 @@
   }
   &__copyright-link:hover {
     content: "";
-    width:27px;
+    width:35px;
     height:35px;
 
     background: url(../img/logo-htmlacademy-hvr.svg) no-repeat center;
   }
   &__copyright-link:active {
     content: "";
-    width:27px;
+    width:35px;
     height:35px;
 
     background: url(../img/logo-htmlacademy-active.svg) no-repeat center;
@@ -133,7 +134,7 @@
       justify-content: space-around;
     }
     &__contacts-item {
-      width: 280px;
+      width: 300px;
       padding: 0;
       margin: 20px auto;
       b {
@@ -149,6 +150,9 @@
       font-size: 40px;
       line-height: 45px;
       font-weight: 300px;
+    }
+    &__contacts-item:nth-child(2) {
+      padding-right: 20px;
     }
     &__wrapper-footer {
       width: 620px;
@@ -178,26 +182,34 @@
   }
   .page-footer {
     &__logo {
-      width: 130px;
+      width: 137px;
+      height: 48px;
       padding: 0;
+      padding-bottom: 5px;
       margin: 0;
     }
     &__social {
-      width: 180px;
+      width: 190px;
       padding: 0;
-      padding-top: 5px;
-      padding-left: 10px;
+      padding-left: 0px;
       margin: 0;
     }
     &__copyright {
-      width: 130px;
+      width: 135px;
       padding: 0;
       padding-top: 5px;
       margin: 0;
       text-align: right;
+      span {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 12px;
+        padding-right: 0px;
+      }
       a {
-        padding-left: 3px;
-        margin-top: 10px;
+        width: 27px;
+        padding-left: 0px;
+        margin-top: 5px;
       }
     }
   }
@@ -255,6 +267,9 @@
       line-height: 60px;
       font-weight: 300;
     }
+    &__contacts-item:nth-child(2) {
+      padding-right: 0;
+    }
     &__wrapper-footer {
       width: 940px;
       min-height: 0;
@@ -272,7 +287,7 @@
         width: 940px;
         min-height: 0;
         margin: 0 auto;
-        padding: 70px 10px;
+        padding: 67px 10px;
 
         display: flex;
         flex-direction: row;
@@ -284,18 +299,30 @@
       }
     }
     &__copyright {
-      width: 150px;
+      width: 160px;
+      padding-top: 0;
       font-size: 18px;
       line-height: 18px;
+      span {
+        padding-right: 4px;
+        margin-top: 5px;
+      }
       a {
-        padding-left: 5px;
+        width: 30px;
+        padding-left: 0px;
+        margin-left: 0;
+        margin-top: 0;
       }
     }
     &__social {
       width: 190px;
-      padding-left: 30px;
+      height: 60px;
+      padding-left: 17px;
+      padding-top: 5px;
     }
     &__logo {
+      width: 148px;
+      height: 50px;
       padding-bottom: 10px;
       &-mobile {
         display: none;
